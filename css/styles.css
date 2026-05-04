@@ -1,26 +1,27 @@
 /* Custom Styles for Restaurant Website */
 
 :root {
-  --primary-color: #735200; /*DONE #735200*/
-  --dark-bg: #463d2e; /*DONE*/
+  --primary-color: #111111; /*DONE #735200*/
+  --dark-bg: #2a2a2a; /*DONE*/
   --light-bg: #f3f4f6; /*DONE*/
   --border-color: #d1d5db; /*DONE*/
-  --text-color: #111827;
+  --text-color: #f5f0e8;
   --scrollbar-track: #000000; /*DONE*/
   --scrollbar-thumb: #9ca3af; /*DONE*/
   --scrollbar-thumb-hover: #6b7280;
   --gray-100: #f3f4f6; /*DONE*/
   --gray-200: #e5e7eb; /*DONE*/
-  /* --gray-600: #666666; */
   --gray-800: #1f2937; /*DONE*/
   --white: #ffffff; /*DONE*/
   --black: #000000; /*DONE*/
-  --animation-color: #735200; /*DONE*/
+  --animation-color: #0a0a0a; /*DONE*/
   --animation-color-2: #f3f4f6; /*DONE*/
-  --animation-color-3: #d1d5db; /*DONE*/
-  --accent-1: #735200; /*DONE*/
-  --accent-2: #a67c00; /*DONE*/
-  --accent-3: #c6a85b; /*DONE*/
+  --animation-color-3: #d4a853; /*DONE*/
+  --accent-1: #c0392b; /*DONE*/
+  --accent-2: #8b0000; /*DONE*/
+  --accent-3: #8b0000; /*DONE*/
+  --loader-piece-1: #ffe8b5;
+  --svg-active-stroke: #6b7280;
   --bg-1: #ffffff; /*DONE*/
   --bg-2: #faf9f7; /*DONE*/
   --bg-3: #f3efe6; /*DONE*/
@@ -31,8 +32,7 @@
   --tiny-nav-border-color: #d6d0c6;
   --card-border-color: #e5e0d8;
   --contact-icon-fill: #aa7942;
-
-  --swiper-pagination-color: #735200;
+  --swiper-pagination-color: #111111;
 }
 
 .primary-bg {
@@ -68,22 +68,28 @@
   color: var(--accent-2);
 }
 
+.font-serif {
+  font-family: "Zen Old Mincho", serif !important;
+}
+
 body {
-  font-family:
+  font-family: "Zen Old Mincho", serif;
+  /* font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", sans-serif;
+    font-family: "Viaoda Libre", serif; */
   line-height: 1.6;
   color: var(--primary-color);
-  font-family: "Viaoda Libre", serif;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--dark-bg);
 }
 
 p,
 ul,
 ol,
 li {
-  font-family: "Cormorant", serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -266,8 +272,8 @@ textarea {
   background: linear-gradient(
     120deg,
     var(--primary-color),
-    #f9f6f0,
-    #ffe8b5,
+    var(--bg-6),
+    var(--loader-piece-1),
     var(--primary-color)
   );
   background-size: 300% 300%;
@@ -317,7 +323,7 @@ textarea {
 svg:has(path):hover > path {
   transition: all 0.4s;
   transform-origin: 0, 0;
-  stroke: #6b7280;
+  stroke: var(--svg-active-stroke);
 }
 
 #line1,

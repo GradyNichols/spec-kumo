@@ -789,7 +789,7 @@ async function loadPage(pageUrl, pushState = true) {
       currentPage === "home"
         ? "Home"
         : currentPage.charAt(0).toUpperCase() + currentPage.slice(1);
-    document.title = `${pageName} - Caspar's`;
+    document.title = `${pageName} - Kumo`;
 
     // Update URL without full page reload
     if (pushState) {
