@@ -1,0 +1,859 @@
+<!-- bg-[linear-gradient(to_bottom,black,transparent),url('/path-to-your-image.jpg')] -->
+<!-- bg-gradient-to-b from-[rgba(0,0,0,0)] to-[#666666] -->
+
+<!-- Hero Section -->
+
+<section
+  class="select-none relative h-screen w-full flex items-center justify-center text-center overflow-hidden"
+>
+  <!-- Background Image -->
+  <!-- <div
+    class="absolute inset-0 bg-cover bg-center"
+    style="
+      background-image: url(&quot;/logo/spicy-ground-beef-rice-bowl_84443-78618.jpg.avif&quot;);
+    "
+  ></div> -->
+
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="bg-[var(--dark-bg)] absolute top-0 left-0 w-full h-full object-cover"
+  >
+    <!-- poster="/public/images/pexels-valeriya-18330996.jpg" -->
+    <source src="/public/media/casparsHomeMedia.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-[var(--primary-color)]/25 mix-blend-multiply">
+    <!-- Add video here  -->
+  </div>
+
+  <div class="absolute inset-0 bg-black/50">
+    <!-- Add video here  -->
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-3xl px-6 space-y-6">
+    <p class="text-xs tracking-[0.3em] uppercase text-[var(--accent-3)]">
+      Caspar’s
+    </p>
+
+    <h1
+      class="text-4xl md:text-5xl font-serif text-white font-[600] leading-tight"
+    >
+      Savor the Opulence of Persia
+    </h1>
+
+    <div class="w-12 h-[1px] bg-[var(--accent-3)] mx-auto opacity-70"></div>
+
+    <p
+      class="text-gray-300 text-lg md:text-xl max-w-xl mx-auto leading-relaxed"
+    >
+      An elevated dining experience inspired by centuries of Persian flavor,
+      reimagined with refinement and care in the heart of Austin.
+    </p>
+
+    <div class="pt-4">
+      <button
+        onclick="loadPage('pages/reservation.html')"
+        class="px-8 py-3 border border-[var(--accent-3)] text-[var(--accent-3)] uppercase tracking-[0.15em] text-sm transition hover:bg-[var(--accent-3)] hover:text-black"
+      >
+        Reserve a Table
+      </button>
+    </div>
+  </div>
+</section>
+
+<section
+  class="select-none py-2 bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+></section>
+<!-- <section class="fade-up opacity-0 transform translate-y-4 p-16 bg-black">
+  <div class="max-w-5xl mx-auto p-16 bg-white text-black text-sm text-center">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi
+    architecto et quae sapiente quos nesciunt rerum beatae eligendi possimus,
+    maxime cum totam maiores. Vero quia impedit consectetur beatae? Reiciendis.
+  </div>
+</section>
+<section
+  class="fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out p-16 bg-black"
+>
+  <div class="max-w-5xl mx-auto p-16 bg-white text-black text-sm text-center">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi
+    architecto et quae sapiente quos nesciunt rerum beatae eligendi possimus,
+    maxime cum totam maiores. Vero quia impedit consectetur beatae? Reiciendis.
+  </div>
+</section>
+<section
+  class="fade-up transition-all duration-500 ease-out opacity-0 transform translate-y-4 p-16 bg-black"
+>
+  <div class="max-w-5xl mx-auto p-16 bg-white text-black text-sm text-center">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi
+    architecto et quae sapiente quos nesciunt rerum beatae eligendi possimus,
+    maxime cum totam maiores. Vero quia impedit consectetur beatae? Reiciendis.
+  </div>
+</section> -->
+
+<!-- img / text section -->
+<section
+  class="select-none md:py-16 py-0 bg-gradient-to-t from-[var(--bg-2)] via-[var(--bg-3)] to-[var(--bg-4)]"
+>
+  <div
+    class="max-w-6xl mx-auto p-0 md:px-6 grid md:grid-cols-2 gap-16 items-center"
+  >
+    <!-- IMAGE (enhanced) -->
+    <div class="relative group">
+      <div class="overflow-hidden md:rounded-md rounded-none">
+        <img
+          src="/public/images/kabob-koobideh-persian-beef-kebabs-2.webp"
+          alt="Dining Experience"
+          class="w-full h-[420px] object-cover transition duration-700 group-hover:scale-105"
+        />
+      </div>
+
+      <!-- subtle overlay -->
+      <div class="absolute inset-0 bg-black/10 rounded-xl"></div>
+    </div>
+
+    <!-- TEXT -->
+    <div
+      class="space-y-6 text-left md:text-left md:pt-0 pt-3 md:px-0 px-[9%] md:pb-0 pb-20 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+    >
+      <p
+        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)] text-shadow-lg"
+      >
+        Our Experience
+      </p>
+
+      <h2
+        class="text-4xl md:text-5xl font-serif text-amber-900 text-shadow-2xs text-shadow-sky-300 leading-tight"
+      >
+        A Celebration of Persian Heritage
+      </h2>
+
+      <div
+        class="w-12 h-[1px] bg-[var(--accent-3)] opacity-70 mx-0 md:mx-0"
+      ></div>
+
+      <p class="text-gray-700 leading-relaxed max-w-lg">
+        At Caspar’s, we honor the depth and beauty of Persian cuisine through
+        carefully sourced ingredients and time-honored techniques. Each dish is
+        crafted to reflect tradition while embracing a modern, elevated
+        approach—bringing people together through flavor, warmth, and
+        experience.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MENU PREVIEW HERE (SLIDER) -->
+<section
+  class="select-none py-28 bg-gradient-to-b from-[var(--bg-2)] to-[var(--white)]"
+>
+  <div class="max-w-6xl mx-auto px-5 space-y-16">
+    <!-- Header -->
+    <div
+      class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+    >
+      <p
+        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
+      >
+        Our Menu
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+        Featured Selections
+      </h2>
+
+      <div
+        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
+      ></div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper menuSwiper">
+      <div class="swiper-wrapper">
+        <!-- ITEM -->
+        <div class="swiper-slide group">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="/public/images/chelo-rice-prep-persian-kabab.webp.webp"
+              class="w-full h-[320px] object-cover transition duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          <div class="pt-4 text-center space-y-1">
+            <h3 class="font-serif text-xl text-gray-800">Saffron Koobideh</h3>
+            <p class="text-sm text-gray-500">
+              Perfectly seasoned ground beef, flame-grilled and served with
+              fragrant basmati rice
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="swiper-slide group">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="/public/images/7816fc07-ab8e-4079-abf7-2d0752e09d7d--66F5011B-F06A-4C2A-BC93-D74B8777A82E.png"
+              class="w-full h-[320px] object-cover transition duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          <div class="pt-4 text-center space-y-1">
+            <h3 class="font-serif text-xl text-gray-800">
+              Zereshk Polo with Chicken
+            </h3>
+            <p class="text-sm text-gray-500">
+              Tender braised chicken with saffron rice and tart barberries
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="swiper-slide group">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="/public/images/perfectly-grilled-lamb-rib-or-loin-chops-recipe-hero-03-262fe2defc7c491688cb2d363dad3446.jpeg"
+              class="w-full h-[320px] object-cover transition duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          <div class="pt-4 text-center space-y-1">
+            <h3 class="font-serif text-xl text-gray-800">Grilled Lamb Shank</h3>
+            <p class="text-sm text-gray-500">
+              Slow-cooked, fall-off-the-bone, infused with Persian spices
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM -->
+        <div class="swiper-slide group">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="/public/images/ghormeh-sabzi-persian-herb-stew-3.jpg"
+              class="w-full h-[320px] object-cover transition duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          <div class="pt-4 text-center space-y-1">
+            <h3 class="font-serif text-xl text-gray-800">Ghormeh Sabzi</h3>
+            <p class="text-sm text-gray-500">
+              Herbs, kidney beans, slow-cooked beef, dried lime
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide group">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="/public/images/joojeh-kabob-persian-saffron-kebabs-12.jpg.webp"
+              class="w-full h-[320px] object-cover transition duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          <div class="pt-4 text-center space-y-1">
+            <h3 class="font-serif text-xl text-gray-800">Joojeh Kabob</h3>
+            <p class="text-sm text-gray-500">
+              Saffron-marinated chicken, grilled to perfection
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center pt-6">
+      <button
+        onclick="loadPage('pages/menu.html')"
+        class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--primary-color)] text-[var(--primary-color)] transition hover:bg-[var(--primary-color)] hover:text-white"
+      >
+        View Full Menu
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- <section
+  class="pt-0.5 bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+></section> -->
+
+<!-- Crafted with intention -->
+<section class="select-none py-24 px-12">
+  <div class="max-w-5xl mx-auto px-4 space-y-16">
+    <!-- Header -->
+    <div
+      class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+    >
+      <p
+        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
+      >
+        Our Philosophy
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+        Rooted in Tradition
+      </h2>
+
+      <div
+        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
+      ></div>
+
+      <p class="text-gray-500 max-w-2xl mx-auto leading-relaxed">
+        Every detail reflects our commitment to authenticity, quality, and
+        experience.
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div class="space-y-12">
+      <!-- Item -->
+      <div
+        class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-[var(--card-border-color)] pb-8"
+      >
+        <h3 class="text-2xl font-serif">Authentic Ingredients</h3>
+
+        <p class="text-gray-500 max-w-xl leading-relaxed">
+          Saffron, herbs, and spices sourced with care
+        </p>
+      </div>
+
+      <!-- Item -->
+      <div
+        class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-[var(--card-border-color)] pb-8"
+      >
+        <h3 class="text-2xl font-serif">Timeless Techniques</h3>
+
+        <p class="text-gray-500 max-w-xl leading-relaxed">
+          Recipes passed down and refined over generations
+        </p>
+      </div>
+
+      <!-- Item -->
+      <div
+        class="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+      >
+        <h3 class="text-2xl font-serif">Elevated Hospitality</h3>
+
+        <p class="text-gray-500 max-w-xl leading-relaxed">
+          Every guest treated with warmth and intention
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- parallax -->
+<section class="select-none relative overflow-hidden">
+  <div
+    class="parallax-section absolute inset-0 z-0"
+    style="
+      background-image: url(&quot;/public/images/pexels-hasan-huseyin-turan-42224442-36579883.jpg&quot;);
+      background-position: center 75%;
+    "
+    id="parallaxBg"
+  ></div>
+
+  <!-- <div
+    id="parallaxBg"
+    loading="lazy"
+    class="absolute inset-0 bg-cover bg-no-repeat bg-fixed z-0"
+    style="
+      background-image: url(/public/images/pexels-hasan-huseyin-turan-42224442-36579883.jpg);
+      background-color: var(--black);
+      background-position: center 75%;
+    "
+  ></div> -->
+
+  <!-- <div class="absolute inset-0 bg-[#735200]/25 mix-blend-multiply">
+     Add video here  
+  </div> -->
+
+  <section
+    class="md:py-1 py-[2px] relative bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+  ></section>
+
+  <div
+    class="px-10 md:py-10 py-20 relative z-10 max-w-3xl md:my-20 mt-0 mb-0 mx-auto bg-white/80 md:backdrop-blur-md backdrop-blur-sm md:rounded-md rounded-none text-center"
+  >
+    <div
+      class="fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold text-amber-900 my-4">
+        Plan Your Visit
+      </h2>
+      <p class="text-gray-800 mb-6">
+        Join us in Austin for an evening of refined Persian dining, where every
+        detail is crafted to be remembered.
+      </p>
+      <button
+        onclick="loadPage('pages/contact.html')"
+        class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--primary-color)] text-[var(--primary-color)] rounded-sm transition-all duration-300 ease-in-out hover:bg-[var(--primary-color)] hover:text-white shadow-[0_2px_10px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
+      >
+        Contact Us
+      </button>
+    </div>
+  </div>
+
+  <section
+    class="md:py-1 py-[2px] relative bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+  ></section>
+</section>
+
+<!-- EVENTS / PRIVATE DINING PREVIEW HERE -->
+<section
+  class="select-none py-28 bg-gradient-to-b from-[var(--white)] via-[var(--bg-3)] to-[var(--bg-4)]"
+>
+  <div class="max-w-6xl mx-auto px-6 space-y-20">
+    <!-- Header -->
+    <div
+      class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+    >
+      <p
+        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
+      >
+        Gatherings
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+        Events & Private Dining
+      </h2>
+
+      <div
+        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
+      ></div>
+    </div>
+
+    <!-- Main Feature -->
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- TEXT (LEFT) -->
+      <div
+        class="space-y-6 md:text-left order-2 md:order-1 md:pt-0 pt-3 md:px-4 px-[7%] fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+      >
+        <p
+          class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)] text-shadow-lg"
+        >
+          Our Experience
+        </p>
+
+        <h2
+          class="text-3xl md:text-4xl font-serif text-amber-900 text-shadow-2xs text-shadow-sky-300 leading-tight"
+        >
+          Private Dining, Reimagined
+        </h2>
+
+        <div
+          class="w-12 h-[1px] bg-[var(--accent-3)] opacity-70 mx-0 md:mx-0"
+        ></div>
+
+        <p class="text-gray-700 leading-relaxed max-w-md">
+          Host your next gathering in a space inspired by Persian
+          elegance—perfect for celebrations, intimate dinners, and unforgettable
+          moments.
+        </p>
+
+        <button
+          onclick="loadPage('pages/events.html')"
+          class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--primary-color)] text-[var(--primary-color)] uppercase tracking-[0.15em] text-sm transition hover:bg-[var(--primary-color)] hover:text-white"
+        >
+          Explore Events
+        </button>
+      </div>
+
+      <!-- IMAGE (RIGHT) -->
+      <div class="overflow-hidden rounded-lg group order-1 md:order-2">
+        <img
+          src="/public/images/pexels-tonive-14885418.jpg"
+          class="w-full h-[420px] object-cover transition duration-700 group-hover:scale-105"
+        />
+      </div>
+    </div>
+
+    <!-- Secondary Row -->
+    <div
+      class="grid md:grid-cols-3 gap-8 md:pt-10 pt-16 px-5 border-t border-[var(--card-border-color)] md:space-y-0 space-y-6"
+    >
+      <div class="space-y-3 text-center">
+        <h4
+          class="font-serif text-xl tracking-[0.12em] uppercase text-[var(--primary-color)] text-shadow-lg fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+        >
+          Custom Menus
+        </h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Tailored to your occasion
+        </p>
+      </div>
+
+      <div class="space-y-3 text-center">
+        <h4
+          class="font-serif text-xl tracking-[0.12em] uppercase text-[var(--primary-color)] text-shadow-lg fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+        >
+          Elegant Atmosphere
+        </h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Warm, inviting, and refined
+        </p>
+      </div>
+
+      <div class="space-y-3 text-center">
+        <h4
+          class="font-serif text-xl tracking-[0.12em] uppercase text-[var(--primary-color)] text-shadow-lg fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+        >
+          Seamless Service
+        </h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Attentive without interruption
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section
+  class="pt-0.5 bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+></section> -->
+
+<!-- FAQ -->
+<section
+  class="border-opacity-10 border-t border-b md:border-t-0 md:border-b-0 border-[var(--accent-2)] select-none bg-gradient-to-t from-[var(--bg-2)] via-[var(--bg-3)] to-[var(--bg-4)] py-20 px-6"
+>
+  <div class="max-w-3xl mx-auto space-y-16">
+    <!-- Header -->
+    <div
+      class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+    >
+      <p
+        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
+      >
+        Information
+      </p>
+
+      <h2
+        class="text-4xl md:text-5xl font-serif text-amber-900 text-shadow-2xs text-shadow-sky-300"
+      >
+        Frequently Asked Questions
+      </h2>
+
+      <div
+        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
+      ></div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="space-y-4 px-6" id="faqContainer">
+      <!-- ITEM -->
+      <div class="border-b border-[var(--card-border-color)]">
+        <button
+          onclick="toggleFAQ(this)"
+          class="w-full flex justify-between items-center py-6 text-left group"
+        >
+          <span class="font-medium text-gray-800 text-lg">
+            Do I need a reservation?
+          </span>
+
+          <span
+            class="faq-icon text-[var(--primary-color)] text-2xl transition-transform duration-300 group-hover:rotate-12"
+          >
+            +
+          </span>
+        </button>
+
+        <div
+          class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0 pr-8 select-none"
+        >
+          <p class="pb-6 text-gray-600 leading-relaxed">
+            Reservations are highly recommended to ensure availability,
+            especially during peak hours.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="border-b border-[var(--card-border-color)]">
+        <button
+          onclick="toggleFAQ(this)"
+          class="w-full flex justify-between items-center py-6 text-left group"
+        >
+          <span class="font-medium text-gray-800 text-lg"
+            >Do you offer private dining?</span
+          >
+
+          <span
+            class="faq-icon text-[var(--primary-color)] text-2xl transition-transform duration-300 group-hover:rotate-12"
+          >
+            +
+          </span>
+        </button>
+
+        <div
+          class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0 pr-8 select-none"
+        >
+          <p class="pb-6 text-gray-600 leading-relaxed">
+            Yes, we offer private dining experiences with customizable menus and
+            seating arrangements.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="border-b border-[var(--card-border-color)]">
+        <button
+          onclick="toggleFAQ(this)"
+          class="w-full flex justify-between items-center py-6 text-left group"
+        >
+          <span class="font-medium text-gray-800 text-lg"
+            >Do you accommodate dietary restrictions?</span
+          >
+
+          <span
+            class="faq-icon text-[var(--primary-color)] text-2xl transition-transform duration-300 group-hover:rotate-12"
+          >
+            +
+          </span>
+        </button>
+
+        <div
+          class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0 pr-8 select-none"
+        >
+          <p class="pb-6 text-gray-600 leading-relaxed">
+            Absolutely. Please inform us ahead of time, and we’ll gladly
+            accommodate your needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-b border-[var(--card-border-color)]">
+        <button
+          onclick="toggleFAQ(this)"
+          class="w-full flex justify-between items-center py-6 text-left group"
+        >
+          <span class="font-medium text-gray-800 text-lg"
+            >Is there a dress code?</span
+          >
+
+          <span
+            class="faq-icon text-[var(--primary-color)] text-2xl transition-transform duration-300 group-hover:rotate-12"
+          >
+            +
+          </span>
+        </button>
+
+        <div
+          class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0 pr-8 select-none"
+        >
+          <p class="pb-6 text-gray-600 leading-relaxed">
+            We encourage a smart casual or elevated style to match the dining
+            experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- guest experience -->
+<section class="select-none py-28 bg-[var(--bg-2)]">
+  <div class="max-w-5xl mx-auto md:px-4 px-8 space-y-20">
+    <!-- Header -->
+    <div
+      class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+    >
+      <p
+        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
+      >
+        Guest Experience
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+        Words from Our Guests
+      </h2>
+
+      <div
+        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
+      ></div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="space-y-16">
+      <!-- Quote -->
+      <div class="max-w-3xl mx-auto text-center space-y-6">
+        <p class="text-xl md:text-2xl font-serif text-gray-800 leading-relaxed">
+          “The flavors felt authentic yet elevated—truly unforgettable.”
+        </p>
+
+        <span class="text-sm text-gray-500 tracking-wide">
+          — Guest Experience
+        </span>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-16 h-[1px] bg-[var(--card-border-color)] mx-auto"></div>
+
+      <!-- Quote -->
+      <div class="max-w-3xl mx-auto text-center space-y-6">
+        <p class="text-xl md:text-2xl font-serif text-gray-800 leading-relaxed">
+          “Every detail, from the food to the atmosphere, was beautifully done.”
+        </p>
+
+        <span class="text-sm text-gray-500 tracking-wide">
+          — Private Dining Guest
+        </span>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-16 h-[1px] bg-[var(--card-border-color)] mx-auto"></div>
+
+      <!-- Quote -->
+      <div class="max-w-3xl mx-auto text-center space-y-6">
+        <p class="text-xl md:text-2xl font-serif text-gray-800 leading-relaxed">
+          “Caspar’s brings Persian cuisine to a whole new level.”
+        </p>
+
+        <span class="text-sm text-gray-500 tracking-wide">
+          — Evening Reservation
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- parallax -->
+<section class="select-none relative overflow-hidden">
+  <div
+    class="parallax-section absolute inset-0 z-0"
+    style="
+      background-image: url(&quot;/public/images/pexels-valeriya-27305315.jpg&quot;);
+      background-position: center;
+    "
+    id="parallaxBg"
+  ></div>
+
+  <!-- <div
+    id="parallaxBg"
+    loading="lazy"
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed z-0"
+    style="
+      background-image: url(/public/images/pexels-valeriya-27305315.jpg);
+      background-color: var(--black);
+    "
+  ></div> -->
+  <section
+    class="relative md:py-1 py-[2px] bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+  ></section>
+  <div
+    class="relative z-10 max-w-3xl md:my-20 mt-0 mb-0 mx-auto p-10 bg-white/80 md:backdrop-blur-md backdrop-blur-sm md:rounded-md rounded-none text-center"
+  >
+    <div
+      class="fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold text-amber-900 my-4">
+        An Evening Worth Remembering
+      </h2>
+      <p class="text-gray-800 mb-6">
+        Reserve your table and experience Persian dining, refined.
+      </p>
+      <button
+        onclick="loadPage('pages/menu.html')"
+        class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--primary-color)] text-[var(--primary-color)] rounded-sm transition-all duration-300 ease-in-out hover:bg-[var(--primary-color)] hover:text-white shadow-[0_2px_10px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
+      >
+        Plan your Evening
+      </button>
+    </div>
+  </div>
+  <section
+    class="relative md:py-1 py-[2px] bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+  ></section>
+</section>
+
+<!-- mailing list -->
+<section class="select-none bg-[var(--bg-2)] py-20 px-6">
+  <div class="max-w-2xl mx-auto space-y-4">
+    <div class="text-center space-y-10">
+      <!-- Header -->
+      <div
+        class="space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+      >
+        <p
+          class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
+        >
+          Updates
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+          Stay Connected
+        </h2>
+
+        <div
+          class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
+        ></div>
+      </div>
+
+      <!-- Description -->
+      <p
+        class="text-gray-600 leading-relaxed max-w-xl mx-auto fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+      >
+        Receive exclusive updates, seasonal dishes, and private event
+        invitations.
+      </p>
+    </div>
+    <div class="space-y-10">
+      <!-- Form -->
+      <form
+        action="https://app.us9.list-manage.com/subscribe/post?u=93af7b5fdd2b6a1e99ccde5ff&amp;id=6045773678&amp;f_id=006242e1f0"
+        data-test="true"
+        method="POST"
+        target="_blank"
+        class="transition-all duration-300 flex flex-col sm:flex-row gap-4 justify-center pt-4 px-2"
+        novalidate
+      >
+        <div class="relative w-full pt-5">
+          <input
+            type="email"
+            placeholder=" "
+            name="EMAIL"
+            id="updatesEmail"
+            class="peer w-full border-b border-gray-300 p-3 focus:outline-none focus:border-[var(--primary-color)]"
+            minlength="6"
+            maxlength="50"
+            required
+          />
+          <label
+            for="updatesEmail"
+            class="cursor-auto absolute left-4 top-5 mt-4 text-sm text-gray-400 transition-all duration-300 peer-placeholder-shown:text-sm peer-focus:left-1 peer-focus:scale-95 peer-[&:not(:placeholder-shown)]:left-1 peer-[&:not(:placeholder-shown)]:scale-95 peer-[&:not(:placeholder-shown)]:top-[-1rem] ease-out duration-200 peer-focus:top-[-1rem] peer-focus:text-xs peer-focus:text-[var(--primary-color)] peer-[&:not(:placeholder-shown)]:top-0 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-[var(--primary-color)]"
+          >
+            Email
+          </label>
+          <p class="error-msg hidden text-red-600 text-xs mt-1"></p>
+          <div aria-hidden="true" style="position: absolute; left: -5000px">
+            <input
+              type="text"
+              name="b_93af7b5fdd2b6a1e99ccde5ff_6045773678"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+        </div>
+
+        <div class="text-center pt-5">
+          <button
+            type="submit"
+            class="md:w-auto w-full submit-btn px-10 py-[13.5px] border border-[var(--primary-color)] text-[var(--primary-color)] uppercase font-medium tracking-[0.12em] text-sm transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-white"
+          >
+            <span class="btn-text">Subscribe</span>
+            <span
+              class="loader hidden w-4 h-4 border-2 border-[var(--primary-color)] border-t-transparent rounded-full animate-spin"
+            ></span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="text-center space-y-10 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+    >
+      <p class="text-xs text-gray-400 pt-4">
+        No spam. Only meaningful updates.
+      </p>
+    </div>
+  </div>
+</section>

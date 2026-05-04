@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Caspar's</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Viaoda+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div
+      id="loader"
+      class="fixed inset-0 bg-white flex items-center justify-center z-[9999]"
+    >
+      <img src="logo/Caspars_transparent.png" class="w-28 h-auto" />
+    </div>
+    <!-- Navigation Bar -->
+    <nav
+      id="navbar"
+      class="select-none text-white shadow-lg fixed top-0 left-0 right-0 z-50 transition-all duration-100 border-none sm:border-b-2 sm:border-gray-300"
+      style="background-color: rgba(255, 255, 255, 0)"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-3 md:py-4 transition-all duration-300 relative"
+      >
+        <div
+          class="flex justify-between items-center min-h-[70px] md:min-h-[78px]"
+        >
+          <!-- Logo + Desktop Nav -->
+          <div
+            class="flex items-center gap-6 max-[855px]:gap-7 md:gap-8 lg:gap-10"
+          >
+            <img
+              src="logo/Caspars_no_logo_transparent.png"
+              onclick="loadPage('pages/home.html')"
+              id="mainLogo"
+              alt="Caspar's Logo"
+              class="logo md:pt-0 pt-2 brightness-150 cursor-pointer hover:opacity-80 transition-all duration-300 primary-text w-auto max-h-[58px] md:max-h-[64px] lg:max-h-[68px] object-contain"
+            />
+
+            <div
+              class="hidden md:block h-6 border-l border-[var(--tiny-nav-border-color)]"
+            ></div>
+
+            <!-- Desktop Links -->
+            <div
+              class="nav-links hidden md:flex items-center lg:gap-6 gap-4 max-[814px]:gap-2 max-[809px]:gap-1 transition-all duration-400 text-md max-[800px]:ml-[-6.5px]"
+            >
+              <button
+                onclick="loadPage('pages/menu.html')"
+                class="cursor-pointer rounded-xs px-5 max-[840px]:px-4 max-[814px]:px-3.5 py-2"
+                id="menu-button"
+              >
+                Menu
+              </button>
+
+              <button
+                onclick="loadPage('pages/events.html')"
+                class="cursor-pointer rounded-xs px-5 max-[840px]:px-4 max-[814px]:px-3.5 py-2"
+                id="events-button"
+              >
+                Events
+              </button>
+
+              <button
+                onclick="loadPage('pages/contact.html')"
+                class="cursor-pointer rounded-xs px-5 max-[840px]:px-4 max-[814px]:px-3.5 py-2"
+                id="contact-button"
+              >
+                Contact
+              </button>
+            </div>
+          </div>
+
+          <!-- Reservation Button -->
+          <button
+            onclick="loadPage('pages/reservation.html')"
+            class="hidden md:block brightness-150 px-5 max-[855px]:px-4 max-[797px]:px-2.5 md:px-6 py-2.5 md:py-3 lg:text-sm md:text-xs reservation-btn border border-[var(--primary-color)] text-[var(--primary-color)] transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-white hover:border-transparent tracking-[0.12em] uppercase font-medium"
+            id="reservation-button"
+          >
+            Make a Reservation
+          </button>
+
+          <!-- Mobile Toggle -->
+          <button
+            onclick="toggleMobileMenu()"
+            id="menuIconButton"
+            class="md:hidden brightness-150 px-4 pt-2 cursor-pointer bg-transparent border-none focus:outline-none"
+          >
+            <svg
+              id="menuIcon"
+              class="w-7 h-7 text-[var(--primary-color)]"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                id="line1"
+                d="M4 6H20"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                id="line2"
+                d="M4 12H20"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                id="line3"
+                d="M4 18H20"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div
+          id="mobileMenu"
+          class="nav-links md:hidden py-2 px-4 space-y-1 text-md flex flex-col items-center"
+        >
+          <button
+            onclick="loadPage('pages/menu.html')"
+            class="hover:shadow-md primary-hover-text block w-full text-center py-3 px-4 cursor-pointer transition-all duration-300 rounded-none mt-2"
+            id="menu-button"
+          >
+            Menu
+          </button>
+
+          <button
+            onclick="loadPage('pages/events.html')"
+            class="hover:shadow-md primary-hover-text block w-full text-center py-3 px-4 cursor-pointer transition-all duration-300 rounded-none"
+            id="events-button"
+          >
+            Events
+          </button>
+
+          <button
+            onclick="loadPage('pages/contact.html')"
+            class="hover:shadow-md primary-hover-text block w-full text-center py-3 px-4 cursor-pointer transition-all duration-300 rounded-none"
+            id="contact-button"
+          >
+            Contact
+          </button>
+
+          <div
+            class="h-1/2 w-full border-b opacity-50 border-[var(--primary-color)] pt-4"
+          ></div>
+
+          <div class="flex justify-end w-full px-4 pt-4 mt-10">
+            <button
+              onclick="loadPage('pages/reservation.html')"
+              class="brightness-150 px-5 py-2.5 text-xs reservation-btn border border-[var(--primary-color)] text-[var(--primary-color)] transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-white hover:border-transparent tracking-[0.12em] uppercase font-medium"
+              id="reservation-button"
+            >
+              Make a Reservation
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="overlay"
+      onclick="closeMobileMenu()"
+      class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 z-[46] md:hidden"
+    ></div>
+
+    <div
+      id="toastContainer"
+      class="fixed top-5 right-5 z-[9999] space-y-3"
+    ></div>
+
+    <div class="mx-auto">
+      <div id="content" class="transition-all duration-500"></div>
+    </div>
+
+    <!-- Footer -->
+    <section
+      class="pt-1 bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+    ></section>
+    <footer class="w-full bg-[var(--dark-bg)] text-gray-300 py-10 px-5 md:px-6">
+      <div class="max-w-5xl mx-auto flex flex-wrap justify-between gap-6">
+        <div
+          class="select-none flex flex-col items-center sm:items-start flex-1 min-w-[180px] sm:flex-[1_1_48%] md:flex-[1_1_22%]"
+        >
+          <h2 class="text-2xl font-semibold text-white mb-2">Caspar's</h2>
+          <p class="text-gray-400 text-sm text-center sm:text-left">
+            Luxury Persian Dining &sdot; Houston, TX
+          </p>
+          <p
+            class="text-gray-300 hover:text-gray-200 text-xs transition-all duration-300 ease-out text-center sm:text-left"
+          >
+            Caspar's was founded in <strong>1987</strong> by Caspar and Maryam
+            Tehrani, Iranian immigrants who came to Houston in the early 1980s
+            and built their dream restaurant from a small family kitchen in the
+            Montrose neighborhood.
+          </p>
+        </div>
+
+        <div
+          class="select-none flex flex-col items-center sm:items-start flex-1 min-w-[180px] sm:flex-[1_1_48%] md:flex-[1_1_22%]"
+        >
+          <h3 class="font-semibold text-white mb-2">Quick Links</h3>
+          <ul class="space-y-1 text-gray-300 text-center sm:text-left">
+            <li>
+              <button
+                onclick="loadPage('pages/privacy.html')"
+                class="primary-hover-text transition cursor-pointer rounded-none"
+              >
+                Privacy Policy
+              </button>
+            </li>
+            <li>
+              <button
+                onclick="loadPage('pages/terms.html')"
+                class="primary-hover-text transition cursor-pointer rounded-none"
+              >
+                Terms of Service
+              </button>
+            </li>
+            <li>
+              <button
+                onclick="loadPage('pages/contact.html')"
+                class="primary-hover-text transition cursor-pointer rounded-none"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col items-center sm:items-start flex-1 min-w-[180px] sm:flex-[1_1_48%] md:flex-[1_1_22%]"
+        >
+          <h3 class="font-semibold text-white mb-2 select-none">Contact</h3>
+          <p class="text-gray-400 text-sm">4217 Montrose Blvd,</p>
+          <p class="text-gray-400 text-sm">Houston, TX 77006</p>
+          <p class="text-gray-400 text-sm">(805) 657-5874</p>
+          <p class="text-gray-400 text-sm">
+            <a
+              href="#mailto:info@caspars.com"
+              class="primary-hover-text transition"
+            >
+              info@caspars.com
+            </a>
+          </p>
+        </div>
+
+        <div
+          class="select-none flex flex-col items-center sm:items-start flex-1 min-w-[180px] sm:flex-[1_1_48%] md:flex-[1_1_22%]"
+        >
+          <h3 class="font-semibold text-white mb-2">Follow Us</h3>
+          <div class="flex justify-center sm:justify-start space-x-4">
+            <a href="#" class="primary-hover-text transition"> Facebook </a>
+            <a href="#" class="primary-hover-text transition"> Instagram </a>
+            <a href="#" class="primary-hover-text transition"> Twitter </a>
+          </div>
+        </div>
+      </div>
+      <div class="select-none mt-8 md:mt-12 text-center text-gray-200 text-sm">
+        &copy; 2026 Caspar's. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/script.js?v=<?= time() ?>"></script>
+  </body>
+</html>
+
+<!--
+future improvements
+
+→ Close other dropdowns when one opens
+→ Keyboard navigation (arrow keys + enter)
+→ Animated dropdown scaling
+→ Selected state highlight
+→ Accessibility (ARIA roles)
+-->
