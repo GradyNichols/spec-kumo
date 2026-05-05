@@ -17,17 +17,8 @@ function scrollToApps() {
 }
 
 const textarea = document.querySelectorAll("textarea");
-
-// textarea.addEventListener("keydown", (e) => {
-//   if (e.key === "Enter") {
-//     e.preventDefault(); // Stops the new line from being created
-//   }
-// });
-
-// textarea.addEventListener("input", function () {
-//   // Replaces all types of line breaks (LF, CR) with an empty string or a space
-//   this.value = this.value.replace(/[\r\n]+/g, "");
-// });
+const navbarBGColor = "var(--navbar-background)";
+const navbarTextColor = "var(--navbar-color)";
 
 function todaysDate() {
   const today = new Date().toISOString().split("T")[0];
@@ -415,8 +406,8 @@ function toggleMobileMenu() {
   if (isOpen) {
     closeMobileMenu();
   } else {
-    navbar.style.backgroundColor = "rgba(255,255,255, 1)";
-    navbar.style.color = "black";
+    navbar.style.backgroundColor = navbarBGColor;
+    navbar.style.color = navbarTextColor;
     if (mobileMenu) {
       mobileMenu.classList.add("menu-open");
     }
@@ -434,9 +425,6 @@ function closeMobileMenu() {
 
   animateMenuIcon(false);
 
-  //   navbar.style.backgroundColor = "rgba(255,255,255, 0)";
-  //   navbar.style.color = "white";
-
   if (mobileMenu) {
     mobileMenu.classList.remove("menu-open");
   }
@@ -452,14 +440,14 @@ function closeMobileMenu() {
     const opacity = scrollPosition / maxScroll;
     if (currentPage === "home") {
       navbar.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
-      navbar.style.color = "white";
+      navbar.style.color = "var(--navbar-color-inactive)";
     } else {
-      navbar.style.backgroundColor = "rgba(255, 255, 255, 1)";
-      navbar.style.color = "black";
+      navbar.style.backgroundColor = navbarBGColor;
+      navbar.style.color = navbarTextColor;
     }
   } else {
-    navbar.style.backgroundColor = "rgba(255, 255, 255, 1)";
-    navbar.style.color = "black";
+    navbar.style.backgroundColor = navbarBGColor;
+    navbar.style.color = navbarTextColor;
   }
 }
 

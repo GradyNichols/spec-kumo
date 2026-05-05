@@ -33,6 +33,9 @@
   --card-border-color: #e5e0d8;
   --contact-icon-fill: #aa7942;
   --swiper-pagination-color: #111111;
+  --navbar-color-inactive: #1a1a1a;
+  --navbar-color: #f2f2f2;
+  --navbar-background: rgba(10, 10, 10, 1);
 }
 
 .primary-bg {
@@ -83,6 +86,7 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: var(--dark-bg);
+  overflow-x: hidden;
 }
 
 p,
@@ -93,6 +97,27 @@ li {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* h1,
+h2,
+h3,
+p,
+span,
+a {
+  line-height: 1 !important;
+} */
+
+span.line-fix-single {
+  display: inline-block;
+}
+
+.line-fix-single {
+  transform: translateY(-2px) !important;
+  line-height: 1;
+}
+.line-fix-paragraph {
+  transform: translateY(-2px);
 }
 
 /* For Chrome, Safari, and Opera */
