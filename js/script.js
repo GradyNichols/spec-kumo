@@ -19,6 +19,7 @@ function scrollToApps() {
 const textarea = document.querySelectorAll("textarea");
 const navbarBGColor = "var(--navbar-background)";
 const navbarTextColor = "var(--navbar-color)";
+const navbarTextColorInactive = "var(--navbar-color-inactive)";
 
 function todaysDate() {
   const today = new Date().toISOString().split("T")[0];
@@ -93,11 +94,11 @@ function updateActiveButtonMobile() {
   const fontWeightCSSactive = "900";
   const fontWeightCSSinactive = "normal";
   const borderCSSinactive = "1px solid transparent";
-  const borderCSSactive = "1px solid var(--primary-color)";
+  const borderCSSactive = "1px solid var(--navbar-color)";
   const cursorCSSactive = "default";
   const cursorCSSinactive = "pointer";
-  const colorCSSactive = "var(--primary-color)";
-  const colorCSSinactive = "var(--gray-400)";
+  const colorCSSactive = "var(--navbar-color)";
+  const colorCSSinactive = "var(--navbar-color-inactive)";
 
   const pageMap = {
     "/menu": "#mobileMenu > button#menu-button",
@@ -135,12 +136,12 @@ function updateActiveButtonMobile() {
 
 function updateActiveButton() {
   const currentPath = window.location.pathname;
-  const colorCSSactive = "var(--primary-color)";
-  const colorCSSinactive = "var(--gray-700)";
-  const fontWeightCSSactive = "900";
-  const fontWeightCSSinactive = "400";
+  const colorCSSactive = "var(--text-1)";
+  const colorCSSinactive = "var(--text-0)";
+  const fontWeightCSSactive = "normal";
+  const fontWeightCSSinactive = "normal";
   const borderCSSinactive = "1px solid transparent";
-  const borderCSSactive = "1px solid var(--primary-color)";
+  const borderCSSactive = "1px solid var(--text-0)";
   const backgroundCSSactive = "var(--bg-2)";
   const backgroundCSSinactive = "transparent";
 
@@ -439,8 +440,8 @@ function closeMobileMenu() {
   if (scrollPosition < maxScroll) {
     const opacity = scrollPosition / maxScroll;
     if (currentPage === "home") {
-      navbar.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
-      navbar.style.color = "var(--navbar-color-inactive)";
+      navbar.style.backgroundColor = `rgba(10, 10, 10, ${opacity})`;
+      navbar.style.color = navbarTextColorInactive;
     } else {
       navbar.style.backgroundColor = navbarBGColor;
       navbar.style.color = navbarTextColor;
@@ -702,26 +703,6 @@ function initAnimations() {
   elements.forEach((el) => {
     observer.observe(el);
   });
-  // const observer = new IntersectionObserver(
-  //   (entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("animate-in");
-  //         observer.unobserve(entry.target);
-  //       }
-  //     });
-  //   },
-  //   {
-  //     threshold: 0.1,
-  //   },
-  // );
-
-  // document.querySelectorAll(".fade-up").forEach((el) => {
-  //   observer.observe(el);
-  //   console.log("observer observed");
-  // });
-
-  // console.log("Animations initialized");
 }
 
 async function loadPage(pageUrl, pushState = true) {
@@ -803,11 +784,11 @@ async function loadPage(pageUrl, pushState = true) {
 
     if (navbar) {
       if (currentPage === "home") {
-        navbar.style.backgroundColor = "rgba(255,255,255, 0)";
-        navbar.style.color = "white";
+        navbar.style.backgroundColor = "rgba(10, 10, 10, 0)";
+        navbar.style.color = navbarTextColorInactive;
       } else {
-        navbar.style.backgroundColor = "rgba(255,255,255, 1)";
-        navbar.style.color = "black";
+        navbar.style.backgroundColor = navbarBGColor;
+        navbar.style.color = navbarTextColor;
       }
     }
 
@@ -864,7 +845,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!navbar) return;
 
     if (currentPage !== "home") {
-      navbar.style.backgroundColor = "rgba(255, 255, 255, 1)";
+      navbar.style.backgroundColor = navbarBGColor;
       return;
     }
 
@@ -873,11 +854,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (scrollPosition < maxScroll) {
       const opacity = scrollPosition / maxScroll;
-      navbar.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
-      navbar.style.color = "white";
+      navbar.style.backgroundColor = `rgba(10, 10, 10, ${opacity})`;
+      navbar.style.color = navbarTextColorInactive;
     } else {
-      navbar.style.backgroundColor = "rgba(255, 255, 255, 1)";
-      navbar.style.color = "black";
+      navbar.style.backgroundColor = navbarBGColor;
+      navbar.style.color = navbarTextColor;
     }
 
     setTimeout(() => initMenuNav(), 50);
@@ -895,42 +876,7 @@ document.addEventListener("DOMContentLoaded", function () {
     el.addEventListener("keyup", constrainInput);
   });
 
-  showToast("success", "Toasty test");
-
-  // const observer = new IntersectionObserver(
-  //   (entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("animate-in");
-  //         observer.unobserve(entry.target);
-  //       }
-  //     });
-  //   },
-  //   {
-  //     threshold: 0.1,
-  //   },
-  // );
-  // const observer = new IntersectionObserver(
-  //   (entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("animate-in");
-  //         observer.unobserve(entry.target);
-  //       }
-  //     });
-  //   },
-  //   {
-  //     threshold: 0.1,
-  //   },
-  // );
-
-  // document.querySelectorAll(".fade-up").forEach((el) => {
-  //   observer.observe(el);
-  // });
+  //showToast("success", "Toasty test");
 
   initAnimations?.();
-
-  // console.log(document.querySelectorAll(".fade-up"));
-
-  // console.log("Restaurant website initialized successfully!");
 });
