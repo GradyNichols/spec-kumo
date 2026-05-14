@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zen+Old+Mincho&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zen+Old+Mincho&display=swap"
       rel="stylesheet"
     />
     <!-- CSS File -->
@@ -107,7 +107,7 @@
 
           <button
             onclick="loadPage('pages/reservation.html')"
-            class="hidden md:block brightness-150 mr-4 max-[855px]:px-4 md:px-6 py-2.5 md:py-3 lg:text-sm text-xs reservation-btn border border-[var(--navbar-color)] text-[var(--navbar-color)] transition-all duration-300 hover:bg-[var(--navbar-color)] hover:text-[var(--navbar-background)] hover:border-transparent tracking-[0.12em] uppercase font-medium"
+            class="leading-normal hidden md:block brightness-150 mr-4 max-[855px]:px-4 md:px-6 py-2.5 md:py-3 lg:text-sm text-xs reservation-btn border border-[var(--navbar-color)] text-[var(--navbar-color)] transition-all duration-300 hover:bg-[var(--navbar-color)] hover:text-[var(--navbar-background)] hover:border-transparent tracking-[0.12em] uppercase font-medium"
             id="reservation-button"
           >
             <span>Make a Reservation</span>
@@ -184,7 +184,7 @@
           <div class="flex justify-end w-full px-4 pt-3">
             <button
               onclick="loadPage('pages/reservation.html')"
-              class="brightness-150 px-5 py-2.5 text-xs reservation-btn border bg-[var(--bg-1)] border-[var(--text-0)] text-[var(--text-0)] hover:bg-[var(--text-0)] hover:text-[var(--bg-1)] hover:border-[var(--text-0)] transition-all duration-300 tracking-[0.12em] uppercase font-medium"
+              class="leading-normal brightness-150 px-5 py-2.5 text-xs reservation-btn border bg-[var(--bg-1)] border-[var(--text-0)] text-[var(--text-0)] hover:bg-[var(--text-0)] hover:text-[var(--bg-1)] hover:border-[var(--text-0)] transition-all duration-300 tracking-[0.12em] uppercase font-medium"
               id="reservation-button"
             >
               <span>Make a Reservation</span>
@@ -210,20 +210,24 @@
     </div>
 
     <!-- Footer -->
+
     <section
-      class="pt-1 bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+      class="pt-1 bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)]"
     ></section>
-    <footer class="w-full bg-[var(--dark-bg)] text-gray-300 py-10 px-5 md:px-6">
-      <div class="max-w-5xl mx-auto flex flex-wrap justify-between gap-6">
+
+    <footer class="w-full bg-[var(--bg-0)] var(--text-0) py-12 px-5 md:px-10">
+      <div class="max-w-5xl mx-auto flex flex-wrap justify-between gap-6 px-2">
         <div
           class="select-none flex flex-col items-center sm:items-start flex-1 min-w-[180px] sm:flex-[1_1_48%] md:flex-[1_1_22%]"
         >
-          <h2 class="text-2xl font-semibold text-white mb-2">Kumo</h2>
-          <p class="text-gray-400 text-sm text-center sm:text-left">
+          <h2 class="text-2xl font-semibold text-[var(--important)] mb-2">
+            Kumo
+          </h2>
+          <p class="text-[var(--text-2)] text-sm text-center sm:text-left">
             Luxury Persian Dining &sdot; Houston, TX
           </p>
           <p
-            class="text-gray-300 hover:text-gray-200 text-xs transition-all duration-300 ease-out text-center sm:text-left"
+            class="hover:text-[var(--text-3)] text-[var(--text-5)] text-xs transition-all duration-300 ease-out text-center sm:text-left"
           >
             Kumo was founded in <strong>1987</strong> by Caspar and Maryam
             Tehrani, Iranian immigrants who came to Houston in the early 1980s
@@ -235,30 +239,30 @@
         <div
           class="select-none flex flex-col items-center sm:items-start flex-1 min-w-[180px] sm:flex-[1_1_48%] md:flex-[1_1_22%]"
         >
-          <h3 class="font-semibold text-white mb-2">Quick Links</h3>
-          <ul class="space-y-1 text-gray-300 text-center sm:text-left">
+          <h3 class="font-semibold mb-2">Quick Links</h3>
+          <ul class="space-y-1 text-[var(--text-2)] text-center sm:text-left">
             <li>
               <button
                 onclick="loadPage('pages/privacy.html')"
-                class="primary-hover-text transition cursor-pointer rounded-none"
+                class="transition cursor-pointer rounded-none hover:text-[var(--text-1)]"
               >
-                Privacy Policy
+                <span>Privacy Policy</span>
               </button>
             </li>
             <li>
               <button
                 onclick="loadPage('pages/terms.html')"
-                class="primary-hover-text transition cursor-pointer rounded-none"
+                class="transition cursor-pointer rounded-none hover:text-[var(--text-1)]"
               >
-                Terms of Service
+                <span>Terms of Service</span>
               </button>
             </li>
             <li>
               <button
                 onclick="loadPage('pages/contact.html')"
-                class="primary-hover-text transition cursor-pointer rounded-none"
+                class="transition cursor-pointer rounded-none hover:text-[var(--text-1)]"
               >
-                Contact
+                <span>Contact</span>
               </button>
             </li>
           </ul>
@@ -267,14 +271,20 @@
         <div
           class="flex flex-col items-center sm:items-start flex-1 min-w-[180px] sm:flex-[1_1_48%] md:flex-[1_1_22%]"
         >
-          <h3 class="font-semibold text-white mb-2 select-none">Contact</h3>
-          <p class="text-gray-400 text-sm">4217 Montrose Blvd,</p>
-          <p class="text-gray-400 text-sm">Houston, TX 77006</p>
-          <p class="text-gray-400 text-sm">(805) 657-5874</p>
-          <p class="text-gray-400 text-sm">
+          <h3 class="font-semibold mb-2 select-none">Contact</h3>
+          <p class="hover:text-[var(--text-3)] text-[var(--text-4)] text-sm">
+            4217 Montrose Blvd,
+          </p>
+          <p class="hover:text-[var(--text-3)] text-[var(--text-4)] text-sm">
+            Houston, TX 77006
+          </p>
+          <p class="hover:text-[var(--text-3)] text-[var(--text-4)] text-sm">
+            (805) 657-5874
+          </p>
+          <p class="text-sm">
             <a
               href="#mailto:info@caspars.com"
-              class="primary-hover-text transition"
+              class="hover:text-[var(--text-3)] text-[var(--text-5)] transition"
             >
               info@caspars.com
             </a>
@@ -284,11 +294,26 @@
         <div
           class="select-none flex flex-col items-center sm:items-start flex-1 min-w-[180px] sm:flex-[1_1_48%] md:flex-[1_1_22%]"
         >
-          <h3 class="font-semibold text-white mb-2">Follow Us</h3>
-          <div class="flex justify-center sm:justify-start space-x-4">
-            <a href="#" class="primary-hover-text transition"> Facebook </a>
-            <a href="#" class="primary-hover-text transition"> Instagram </a>
-            <a href="#" class="primary-hover-text transition"> Twitter </a>
+          <h3 class="font-semibold mb-2">Follow Us</h3>
+          <div class="flex flex-wrap justify-center sm:justify-start space-x-4">
+            <a
+              href="#"
+              class="hover:text-[var(--text-1)] text-[var(--text-2)] transition"
+            >
+              <span>Facebook</span>
+            </a>
+            <a
+              href="#"
+              class="hover:text-[var(--text-1)] text-[var(--text-2)] transition"
+            >
+              <span>Instagram</span>
+            </a>
+            <a
+              href="#"
+              class="hover:text-[var(--text-1)] text-[var(--text-2)] transition"
+            >
+              <span>Twitter</span>
+            </a>
           </div>
         </div>
       </div>

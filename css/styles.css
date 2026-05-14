@@ -102,9 +102,12 @@
   --bg-3: #2a2a2a !important;
 
   --text-important: #f4f4f4 !important;
-  --text-0: #f5f0e8 !important;
+  --text-0: #f5f0e8 !important; /*heading*/
   --text-1: #d6d0c4 !important;
-  --text-2: #a8a29a !important;
+  --text-2: #a8a29a !important; /*subheading*/
+  --text-3: #eeeeee !important; /*paragraph hover*/
+  --text-4: #dddddd !important;
+  --text-5: #cccccc !important; /*paragraph*/
 
   --red-0: #8b0000 !important;
   --red-1: #a11212 !important;
@@ -115,31 +118,38 @@
   --gold-1: #e6c27a !important;
   --gold-2: #b8964a !important;
 
-  --cloud-0: #0a0a0a !important;
-  --cloud-1: #0d0d0d !important;
-  --cloud-2: #111010 !important;
-  --cloud-3: #141110 !important;
-  --cloud-4: #181514 !important;
-  --cloud-5: #1c1a19 !important;
-  --cloud-6: #22201f !important;
+  --cloud-0: #22201f !important;
+  --cloud-1: #252322 !important;
+  --cloud-2: #282625 !important;
+  --cloud-3: #2b2928 !important;
+  --cloud-4: #2e2c2b !important;
+  --cloud-5: #31302e !important;
+  --cloud-6: #343331 !important;
+  --cloud-7: #373634 !important;
+  --cloud-8: #3a3937 !important;
+  --cloud-9: #3c3b39 !important;
+  --cloud-10: #3d3d3c !important;
+  --cloud-11: #3e3e3d !important;
+  --cloud-12: #3f3f3e !important;
+  --cloud-13: #3f3f3f !important;
 
-  --border-card: #e5e0d8 !important;
+  --border-card: rgba(26, 26, 26, 0.5) !important;
 
-  --menu-nav: #333333 !important;
+  --menu-nav: #222222 !important;
   --menu-nav-text-color: #f5f0e8 !important;
   --menu-nav-text-color-hover: #eae3d6 !important;
   --menu-nav-text-color-active: #d6d0c4 !important;
   --tiny-nav-border-color: #d6d0c4 !important;
 
-  --contact-icon-fill: #111010 !important;
+  --contact-icon-fill: #c0392b !important;
 
   --navbar-color-inactive: #f3f4f6 !important;
   --navbar-color: #f5f0e8 !important;
-  --navbar-background: rgba(26, 26, 26, 1) !important;
+  --navbar-background: rgba(26, 26, 26, 1) !important; /*#1a1a1a*/
   --svg-active-stroke: #555555 !important;
 
-  --swiper-pagination-color: #333333 !important;
-  --swiper-pagination-bullet-inactive-color: #111111 !important;
+  --swiper-pagination-color: #c0392b !important;
+  --swiper-pagination-bullet-inactive-color: #f5f0e8 !important;
 
   --scrollbar-track: #000000 !important;
   --scrollbar-thumb: #9ca3af !important;
@@ -149,6 +159,12 @@
   --loader-gradient-1: #8b0000 !important;
   --loader-gradient-2: #eae3d6 !important;
   --loader-gradient-3: #c0392b !important;
+
+  --input-bg: #3f3f3f !important;
+  --input-bg-focus: #333333 !important;
+  --input-text: #d1d5db !important;
+  --input-border: #333333 !important;
+  --input-border-focus: #444444 !important;
 
   /* -------------NOTHING BELOW HERE-------------- */
 
@@ -168,9 +184,9 @@
   --accent-1: #c0392b;
   --accent-2: #8b0000;
   --accent-3: #8b0000;
-  --bg-1: #ffffff;
+  /* --bg-1: #ffffff;
   --bg-2: #faf9f7;
-  --bg-3: #f3efe6;
+  --bg-3: #f3efe6;*/
   --bg-4: #eae3d6;
   --bg-5: #f8f4f2;
   --bg-6: #f9f7f2;
@@ -192,14 +208,6 @@
   --scrollbar-track: #000000;
   --scrollbar-thumb: #9ca3af;
   --scrollbar-thumb-hover: #6b7280; */
-}
-
-.primary-border {
-  border-color: var(--primary-color);
-}
-
-.primary-hover-text:hover {
-  color: var(--light-bg);
 }
 
 * {
@@ -249,11 +257,20 @@ body {
   overflow-x: hidden;
 }
 
+/* p {
+  color: var(--text-5) !important;
+}
+
+p:hover {
+  color: var(--text-3) !important;
+} */
+
 p,
 ul,
 ol,
-li {
-  font-family: "Inter", sans-serif;
+li,
+a {
+  font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -287,15 +304,17 @@ html::-webkit-scrollbar {
 
 input[type="date"],
 input[type="time"] {
-  color: var(--bg-0); /* gray-400 */
+  color: var(--input-text); /* gray-400 */
   appearance: none;
   -webkit-appearance: none;
-  height: 48px;
+  height: 50px;
+  color-scheme: dark;
 }
 
 input[type="date"]::-webkit-datetime-edit,
 input[type="time"]::-webkit-datetime-edit {
-  color: inherit;
+  color: var(--bg-0);
+  filter: invert(1);
 }
 
 /* Smooth Scrolling */

@@ -11,7 +11,7 @@
     muted
     loop
     playsinline
-    class="bg-[var(--dark-bg)] absolute top-0 left-0 w-full h-full object-cover"
+    class="bg-[var(--bg-0)] absolute top-0 left-0 w-full h-full object-cover"
   >
     <!-- poster="/public/images/pexels-valeriya-18330996.jpg" -->
     <source src="/public/media/13393550_1080_1920_30fps.mp4" type="video/mp4" />
@@ -26,20 +26,20 @@
 
   <!-- Content -->
   <div class="relative z-10 max-w-3xl px-6 space-y-6">
-    <p class="text-xs tracking-[0.3em] uppercase text-[var(--accent-3)]">
+    <p class="text-xs tracking-[0.3em] uppercase text-[var(--text-2)]">
       Kumo 雲
     </p>
 
     <h1
-      class="text-4xl md:text-5xl font-serif text-white font-[600] leading-tight"
+      class="text-4xl md:text-5xl font-serif text-[var(--text-1)] font-[600] leading-tight drop-shadow-md drop-shadow-[var(--red-3)]/30"
     >
       Savor the Opulence of Persia
     </h1>
 
-    <div class="w-12 h-[1px] bg-[var(--accent-3)] mx-auto opacity-70"></div>
+    <div class="w-12 h-[1px] bg-[var(--red-3)] mx-auto opacity-70"></div>
 
     <p
-      class="text-gray-300 text-lg md:text-xl max-w-xl mx-auto leading-relaxed"
+      class="text-[var(--text-5)] text-lg md:text-xl max-w-xl mx-auto leading-relaxed"
     >
       An elevated dining experience inspired by centuries of Persian flavor,
       reimagined with refinement and care in the heart of Austin.
@@ -48,7 +48,7 @@
     <div class="pt-4">
       <button
         onclick="loadPage('pages/reservation.html')"
-        class="px-8 py-3 border border-[var(--accent-3)] text-[var(--accent-3)] uppercase tracking-[0.15em] text-sm transition hover:bg-[var(--accent-3)] hover:text-black"
+        class="px-8 py-3 border border-[var(--text-0)] text-[var(--text-0)] uppercase tracking-[0.15em] text-sm transition hover:bg-[var(--bg-light-0)] hover:text-[var(--bg-1)] hover:border-transparent"
       >
         Reserve a Table
       </button>
@@ -57,40 +57,15 @@
 </section>
 
 <section
-  class="select-none py-2 bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+  class="select-none py-2 bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)] text-white"
 ></section>
-<!-- <section class="fade-up opacity-0 transform translate-y-4 p-16 bg-black">
-  <div class="max-w-5xl mx-auto p-16 bg-white text-black text-sm text-center">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi
-    architecto et quae sapiente quos nesciunt rerum beatae eligendi possimus,
-    maxime cum totam maiores. Vero quia impedit consectetur beatae? Reiciendis.
-  </div>
-</section>
-<section
-  class="fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out p-16 bg-black"
->
-  <div class="max-w-5xl mx-auto p-16 bg-white text-black text-sm text-center">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi
-    architecto et quae sapiente quos nesciunt rerum beatae eligendi possimus,
-    maxime cum totam maiores. Vero quia impedit consectetur beatae? Reiciendis.
-  </div>
-</section>
-<section
-  class="fade-up transition-all duration-500 ease-out opacity-0 transform translate-y-4 p-16 bg-black"
->
-  <div class="max-w-5xl mx-auto p-16 bg-white text-black text-sm text-center">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi
-    architecto et quae sapiente quos nesciunt rerum beatae eligendi possimus,
-    maxime cum totam maiores. Vero quia impedit consectetur beatae? Reiciendis.
-  </div>
-</section> -->
 
 <!-- img / text section -->
 <section
-  class="select-none md:py-16 py-0 bg-gradient-to-t from-[var(--bg-2)] via-[var(--bg-3)] to-[var(--bg-4)]"
+  class="select-none md:py-16 py-0 bg-gradient-to-b from-[var(--cloud-0)] via-[var(--cloud-2)] to-[var(--cloud-4)]"
 >
   <div
-    class="max-w-6xl mx-auto p-0 md:px-6 grid md:grid-cols-2 gap-16 items-center"
+    class="max-w-6xl mx-auto p-0 md:px-6 grid md:grid-cols-2 lg:gap-16 gap-8 items-center"
   >
     <!-- IMAGE (enhanced) -->
     <div class="relative group">
@@ -111,13 +86,13 @@
       class="space-y-6 text-left md:text-left md:pt-0 pt-3 md:px-0 px-[9%] md:pb-0 pb-20 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
       <p
-        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)] text-shadow-lg"
+        class="text-xs tracking-[0.25em] uppercase text-[var(--text-2)] text-shadow-lg"
       >
         Our Experience
       </p>
 
       <h2
-        class="text-4xl md:text-5xl font-serif text-amber-900 text-shadow-2xs text-shadow-sky-300 leading-tight"
+        class="text-4xl md:text-5xl font-serif text-[var(--text-important)] text-shadow-2xs text-shadow-sky-300 leading-tight"
       >
         A Celebration of Persian Heritage
       </h2>
@@ -126,7 +101,9 @@
         class="w-12 h-[1px] bg-[var(--accent-3)] opacity-70 mx-0 md:mx-0"
       ></div>
 
-      <p class="text-gray-700 leading-relaxed max-w-lg">
+      <p
+        class="text-[var(--text-5)] hover:text-[var(--text-3)] leading-relaxed max-w-lg"
+      >
         At Caspar’s, we honor the depth and beauty of Persian cuisine through
         carefully sourced ingredients and time-honored techniques. Each dish is
         crafted to reflect tradition while embracing a modern, elevated
@@ -136,29 +113,25 @@
     </div>
   </div>
 </section>
-
+<!-- from-[var(--cloud-4)] via-[var(--cloud-6)] to-[var(--cloud-8)] -->
 <!-- MENU PREVIEW HERE (SLIDER) -->
 <section
-  class="select-none py-28 bg-gradient-to-b from-[var(--bg-2)] to-[var(--white)]"
+  class="select-none py-28 bg-gradient-to-b from-[var(--bg-2)] via-[var(--bg-1)] to-[var(--bg-3)]"
 >
-  <div class="max-w-6xl mx-auto px-5 space-y-16">
+  <div class="max-w-6xl mx-auto px-0 space-y-16">
     <!-- Header -->
     <div
-      class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+      class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out px-5"
     >
-      <p
-        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
-      >
+      <p class="text-xs tracking-[0.25em] uppercase text-[var(--gold-0)]">
         Our Menu
       </p>
 
-      <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+      <h2 class="text-4xl md:text-5xl font-serif text-[var(--text-important)]">
         Featured Selections
       </h2>
 
-      <div
-        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
-      ></div>
+      <div class="w-12 h-[1px] bg-[var(--bg-light-0)] mx-auto opacity-60"></div>
     </div>
 
     <!-- Swiper -->
@@ -174,8 +147,10 @@
           </div>
 
           <div class="pt-4 text-center space-y-1">
-            <h3 class="font-serif text-xl text-gray-800">Saffron Koobideh</h3>
-            <p class="text-sm text-gray-500">
+            <h3 class="font-serif text-xl text-[var(--text-1)]">
+              Saffron Koobideh
+            </h3>
+            <p class="text-sm text-[var(--text-2)]">
               Perfectly seasoned ground beef, flame-grilled and served with
               fragrant basmati rice
             </p>
@@ -192,10 +167,10 @@
           </div>
 
           <div class="pt-4 text-center space-y-1">
-            <h3 class="font-serif text-xl text-gray-800">
+            <h3 class="font-serif text-xl text-[var(--text-1)]">
               Zereshk Polo with Chicken
             </h3>
-            <p class="text-sm text-gray-500">
+            <p class="text-sm text-[var(--text-2)]">
               Tender braised chicken with saffron rice and tart barberries
             </p>
           </div>
@@ -211,8 +186,10 @@
           </div>
 
           <div class="pt-4 text-center space-y-1">
-            <h3 class="font-serif text-xl text-gray-800">Grilled Lamb Shank</h3>
-            <p class="text-sm text-gray-500">
+            <h3 class="font-serif text-xl text-[var(--text-1)]">
+              Grilled Lamb Shank
+            </h3>
+            <p class="text-sm text-[var(--text-2)]">
               Slow-cooked, fall-off-the-bone, infused with Persian spices
             </p>
           </div>
@@ -228,8 +205,10 @@
           </div>
 
           <div class="pt-4 text-center space-y-1">
-            <h3 class="font-serif text-xl text-gray-800">Ghormeh Sabzi</h3>
-            <p class="text-sm text-gray-500">
+            <h3 class="font-serif text-xl text-[var(--text-1)]">
+              Ghormeh Sabzi
+            </h3>
+            <p class="text-sm text-[var(--text-2)]">
               Herbs, kidney beans, slow-cooked beef, dried lime
             </p>
           </div>
@@ -244,20 +223,24 @@
           </div>
 
           <div class="pt-4 text-center space-y-1">
-            <h3 class="font-serif text-xl text-gray-800">Joojeh Kabob</h3>
-            <p class="text-sm text-gray-500">
+            <h3 class="font-serif text-xl text-[var(--text-1)]">
+              Joojeh Kabob
+            </h3>
+            <p class="text-sm text-[var(--text-2)]">
               Saffron-marinated chicken, grilled to perfection
             </p>
           </div>
         </div>
       </div>
+
+      <div class="relative top-20 swiper-pagination mt-4"></div>
     </div>
 
     <!-- CTA -->
-    <div class="text-center pt-6">
+    <div class="text-center pt-0">
       <button
         onclick="loadPage('pages/menu.html')"
-        class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--primary-color)] text-[var(--primary-color)] transition hover:bg-[var(--primary-color)] hover:text-white"
+        class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--text-0)] text-[var(--text-0)] hover:bg-[var(--text-0)] hover:text-[var(--bg-1)] transition"
       >
         View Full Menu
       </button>
@@ -266,31 +249,29 @@
 </section>
 
 <!-- <section
-  class="pt-0.5 bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+  class="pt-0.5 bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)] text-white"
 ></section> -->
 
 <!-- Crafted with intention -->
-<section class="select-none py-24 px-12 bg-[var(--white)]">
+<section
+  class="select-none py-24 px-12 bg-gradient-to-b from-[var(--cloud-8)] via-[var(--cloud-10)] to-[var(--cloud-12)]"
+>
   <div class="max-w-5xl mx-auto px-4 space-y-16">
     <!-- Header -->
     <div
       class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
-      <p
-        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
-      >
+      <p class="text-xs tracking-[0.25em] uppercase text-[var(--text-2)]">
         Our Philosophy
       </p>
 
-      <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+      <h2 class="text-4xl md:text-5xl font-serif text-[var(--text-important)]">
         Rooted in Tradition
       </h2>
 
-      <div
-        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
-      ></div>
+      <div class="w-12 h-[1px] bg-[var(--bg-light-0)] mx-auto opacity-60"></div>
 
-      <p class="text-gray-500 max-w-2xl mx-auto leading-relaxed">
+      <p class="text-[var(--text-2)] max-w-2xl mx-auto leading-relaxed">
         Every detail reflects our commitment to authenticity, quality, and
         experience.
       </p>
@@ -300,22 +281,22 @@
     <div class="space-y-12">
       <!-- Item -->
       <div
-        class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-[var(--card-border-color)] pb-8"
+        class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-[var(--border-card)] pb-8"
       >
         <h3 class="text-2xl font-serif">Authentic Ingredients</h3>
 
-        <p class="text-gray-500 max-w-xl leading-relaxed">
+        <p class="text-[var(--text-2)] max-w-xl leading-relaxed">
           Saffron, herbs, and spices sourced with care
         </p>
       </div>
 
       <!-- Item -->
       <div
-        class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-[var(--card-border-color)] pb-8"
+        class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-[var(--border-card)] pb-8"
       >
         <h3 class="text-2xl font-serif">Timeless Techniques</h3>
 
-        <p class="text-gray-500 max-w-xl leading-relaxed">
+        <p class="text-[var(--text-2)] max-w-xl leading-relaxed">
           Recipes passed down and refined over generations
         </p>
       </div>
@@ -326,7 +307,7 @@
       >
         <h3 class="text-2xl font-serif">Elevated Hospitality</h3>
 
-        <p class="text-gray-500 max-w-xl leading-relaxed">
+        <p class="text-[var(--text-2)] max-w-xl leading-relaxed">
           Every guest treated with warmth and intention
         </p>
       </div>
@@ -345,41 +326,28 @@
     id="parallaxBg"
   ></div>
 
-  <!-- <div
-    id="parallaxBg"
-    loading="lazy"
-    class="absolute inset-0 bg-cover bg-no-repeat bg-fixed z-0"
-    style="
-      background-image: url(/public/images/pexels-hasan-huseyin-turan-42224442-36579883.jpg);
-      background-color: var(--black);
-      background-position: center 75%;
-    "
-  ></div> -->
-
-  <!-- <div class="absolute inset-0 bg-[#735200]/25 mix-blend-multiply">
-     Add video here  
-  </div> -->
-
   <section
-    class="md:py-1 py-[2px] relative bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+    class="md:py-1 py-[2px] relative bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)] text-white"
   ></section>
 
   <div
-    class="px-10 md:py-10 py-20 relative z-10 max-w-3xl md:my-20 mt-0 mb-0 mx-auto bg-white/80 md:backdrop-blur-md backdrop-blur-sm md:rounded-md rounded-none text-center"
+    class="px-10 md:py-10 py-20 relative z-10 max-w-3xl md:my-40 mt-0 mb-0 mx-auto bg-[#333333]/80 md:backdrop-blur-md backdrop-blur-sm md:rounded-md rounded-none text-center"
   >
     <div
       class="fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
-      <h2 class="text-3xl md:text-4xl font-bold text-amber-900 my-4">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-[var(--text-important)] my-4"
+      >
         Plan Your Visit
       </h2>
-      <p class="text-gray-800 mb-6">
+      <p class="text-[var(--text-1)] mb-6">
         Join us in Austin for an evening of refined Persian dining, where every
         detail is crafted to be remembered.
       </p>
       <button
         onclick="loadPage('pages/contact.html')"
-        class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--primary-color)] text-[var(--primary-color)] rounded-sm transition-all duration-300 ease-in-out hover:bg-[var(--primary-color)] hover:text-white shadow-[0_2px_10px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
+        class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--text-0)] text-[var(--text-0)] hover:bg-[var(--text-0)] hover:text-[var(--bg-1)] rounded-sm transition-all duration-300 ease-in-out shadow-[0_2px_10px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
       >
         Contact Us
       </button>
@@ -387,32 +355,28 @@
   </div>
 
   <section
-    class="md:py-1 py-[2px] relative bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+    class="md:py-1 py-[2px] relative bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)] text-white"
   ></section>
 </section>
 
 <!-- EVENTS / PRIVATE DINING PREVIEW HERE -->
 <section
-  class="select-none py-28 bg-gradient-to-b from-[var(--white)] via-[var(--bg-3)] to-[var(--bg-4)]"
+  class="select-none py-28 bg-gradient-to-b from-[var(--cloud-12)] via-[var(--cloud-10)] to-[var(--cloud-8)]"
 >
   <div class="max-w-6xl mx-auto px-6 space-y-20">
     <!-- Header -->
     <div
       class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
-      <p
-        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
-      >
+      <p class="text-xs tracking-[0.25em] uppercase text-[var(--text-2)]">
         Gatherings
       </p>
 
-      <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+      <h2 class="text-4xl md:text-5xl font-serif text-[var(--text-important)]">
         Events & Private Dining
       </h2>
 
-      <div
-        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
-      ></div>
+      <div class="w-12 h-[1px] bg-[var(--bg-light-0)] mx-auto opacity-60"></div>
     </div>
 
     <!-- Main Feature -->
@@ -422,13 +386,13 @@
         class="space-y-6 md:text-left order-2 md:order-1 md:pt-0 pt-3 md:px-4 px-[7%] fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
       >
         <p
-          class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)] text-shadow-lg"
+          class="text-xs tracking-[0.25em] uppercase text-[var(--text-2)] text-shadow-lg"
         >
-          Our Experience
+          Make it yours
         </p>
 
         <h2
-          class="text-3xl md:text-4xl font-serif text-amber-900 text-shadow-2xs text-shadow-sky-300 leading-tight"
+          class="text-3xl md:text-4xl font-serif text-[var(--text-important)] text-shadow-2xs text-shadow-sky-300 leading-tight"
         >
           Private Dining, Reimagined
         </h2>
@@ -437,7 +401,7 @@
           class="w-12 h-[1px] bg-[var(--accent-3)] opacity-70 mx-0 md:mx-0"
         ></div>
 
-        <p class="text-gray-700 leading-relaxed max-w-md">
+        <p class="text-[var(--text-4)] leading-relaxed max-w-md">
           Host your next gathering in a space inspired by Persian
           elegance—perfect for celebrations, intimate dinners, and unforgettable
           moments.
@@ -445,7 +409,7 @@
 
         <button
           onclick="loadPage('pages/events.html')"
-          class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--primary-color)] text-[var(--primary-color)] uppercase tracking-[0.15em] text-sm transition hover:bg-[var(--primary-color)] hover:text-white"
+          class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--text-0)] text-[var(--text-0)] hover:bg-[var(--text-0)] hover:text-[var(--bg-1)] uppercase tracking-[0.15em] text-sm transition"
         >
           Explore Events
         </button>
@@ -462,37 +426,37 @@
 
     <!-- Secondary Row -->
     <div
-      class="grid md:grid-cols-3 gap-8 md:pt-10 pt-16 px-5 border-t border-[var(--card-border-color)] md:space-y-0 space-y-6"
+      class="grid md:grid-cols-3 gap-8 md:pt-10 pt-16 px-5 border-t border-[var(--border-card)] md:space-y-0 space-y-6"
     >
       <div class="space-y-3 text-center">
         <h4
-          class="font-serif text-xl tracking-[0.12em] uppercase text-[var(--primary-color)] text-shadow-lg fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+          class="font-serif text-xl tracking-[0.12em] uppercase text-[var(--text-0)] text-shadow-lg fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
         >
           Custom Menus
         </h4>
-        <p class="text-gray-500 text-sm leading-relaxed">
+        <p class="text-[var(--text-2)] text-sm leading-relaxed">
           Tailored to your occasion
         </p>
       </div>
 
       <div class="space-y-3 text-center">
         <h4
-          class="font-serif text-xl tracking-[0.12em] uppercase text-[var(--primary-color)] text-shadow-lg fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+          class="font-serif text-xl tracking-[0.12em] uppercase text-[var(--text-0)] text-shadow-lg fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
         >
           Elegant Atmosphere
         </h4>
-        <p class="text-gray-500 text-sm leading-relaxed">
+        <p class="text-[var(--text-2)] text-sm leading-relaxed">
           Warm, inviting, and refined
         </p>
       </div>
 
       <div class="space-y-3 text-center">
         <h4
-          class="font-serif text-xl tracking-[0.12em] uppercase text-[var(--primary-color)] text-shadow-lg fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+          class="font-serif text-xl tracking-[0.12em] uppercase text-[var(--text-0)] text-shadow-lg fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
         >
           Seamless Service
         </h4>
-        <p class="text-gray-500 text-sm leading-relaxed">
+        <p class="text-[var(--text-2)] text-sm leading-relaxed">
           Attentive without interruption
         </p>
       </div>
@@ -501,49 +465,47 @@
 </section>
 
 <!-- <section
-  class="pt-0.5 bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+  class="pt-0.5 bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)] text-white"
 ></section> -->
+
+<!-- md:border-t-0 md:border-b-0 border-[var(--red-0)] -->
 
 <!-- FAQ -->
 <section
-  class="border-opacity-10 border-t border-b md:border-t-0 md:border-b-0 border-[var(--accent-2)] select-none bg-gradient-to-t from-[var(--bg-2)] via-[var(--bg-3)] to-[var(--bg-4)] py-20 px-6"
+  class="select-none bg-gradient-to-b from-[var(--bg-2)] via-[var(--bg-1)] to-[var(--bg-2)] py-20 px-6"
 >
   <div class="max-w-3xl mx-auto space-y-16">
     <!-- Header -->
     <div
       class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
-      <p
-        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
-      >
+      <p class="text-xs tracking-[0.25em] uppercase text-[var(--gold-0)]">
         Information
       </p>
 
       <h2
-        class="text-4xl md:text-5xl font-serif text-amber-900 text-shadow-2xs text-shadow-sky-300"
+        class="text-4xl md:text-5xl font-serif text-[var(--text-important)] text-shadow-2xs text-shadow-sky-300"
       >
         Frequently Asked Questions
       </h2>
 
-      <div
-        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
-      ></div>
+      <div class="w-12 h-[1px] bg-[var(--bg-light-0)] mx-auto opacity-60"></div>
     </div>
 
     <!-- FAQ -->
     <div class="space-y-4 px-6" id="faqContainer">
       <!-- ITEM -->
-      <div class="border-b border-[var(--card-border-color)]">
+      <div class="border-b border-[var(--border-card)]">
         <button
           onclick="toggleFAQ(this)"
           class="w-full flex justify-between items-center py-6 text-left group"
         >
-          <span class="font-medium text-gray-800 text-lg">
+          <span class="font-medium text-[var(--text-1)] text-lg">
             Do I need a reservation?
           </span>
 
           <span
-            class="faq-icon text-[var(--primary-color)] text-2xl transition-transform duration-300 group-hover:rotate-12"
+            class="faq-icon text-[var(--text-0)] text-2xl transition-transform duration-300 group-hover:rotate-12"
           >
             +
           </span>
@@ -552,7 +514,7 @@
         <div
           class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0 pr-8 select-none"
         >
-          <p class="pb-6 text-gray-600 leading-relaxed">
+          <p class="pb-6 text-[var(--text-4)] leading-relaxed">
             Reservations are highly recommended to ensure availability,
             especially during peak hours.
           </p>
@@ -560,17 +522,17 @@
       </div>
 
       <!-- ITEM -->
-      <div class="border-b border-[var(--card-border-color)]">
+      <div class="border-b border-[var(--border-card)]">
         <button
           onclick="toggleFAQ(this)"
           class="w-full flex justify-between items-center py-6 text-left group"
         >
-          <span class="font-medium text-gray-800 text-lg"
+          <span class="font-medium text-[var(--text-1)] text-lg"
             >Do you offer private dining?</span
           >
 
           <span
-            class="faq-icon text-[var(--primary-color)] text-2xl transition-transform duration-300 group-hover:rotate-12"
+            class="faq-icon text-[var(--text-0)] text-2xl transition-transform duration-300 group-hover:rotate-12"
           >
             +
           </span>
@@ -579,7 +541,7 @@
         <div
           class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0 pr-8 select-none"
         >
-          <p class="pb-6 text-gray-600 leading-relaxed">
+          <p class="pb-6 text-[var(--text-4)] leading-relaxed">
             Yes, we offer private dining experiences with customizable menus and
             seating arrangements.
           </p>
@@ -587,17 +549,17 @@
       </div>
 
       <!-- ITEM -->
-      <div class="border-b border-[var(--card-border-color)]">
+      <div class="border-b border-[var(--border-card)]">
         <button
           onclick="toggleFAQ(this)"
           class="w-full flex justify-between items-center py-6 text-left group"
         >
-          <span class="font-medium text-gray-800 text-lg"
+          <span class="font-medium text-[var(--text-1)] text-lg"
             >Do you accommodate dietary restrictions?</span
           >
 
           <span
-            class="faq-icon text-[var(--primary-color)] text-2xl transition-transform duration-300 group-hover:rotate-12"
+            class="faq-icon text-[var(--text-0)] text-2xl transition-transform duration-300 group-hover:rotate-12"
           >
             +
           </span>
@@ -606,24 +568,24 @@
         <div
           class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0 pr-8 select-none"
         >
-          <p class="pb-6 text-gray-600 leading-relaxed">
+          <p class="pb-6 text-[var(--text-4)] leading-relaxed">
             Absolutely. Please inform us ahead of time, and we’ll gladly
             accommodate your needs.
           </p>
         </div>
       </div>
 
-      <div class="border-b border-[var(--card-border-color)]">
+      <div class="border-b border-[var(--border-card)]">
         <button
           onclick="toggleFAQ(this)"
           class="w-full flex justify-between items-center py-6 text-left group"
         >
-          <span class="font-medium text-gray-800 text-lg"
+          <span class="font-medium text-[var(--text-1)] text-lg"
             >Is there a dress code?</span
           >
 
           <span
-            class="faq-icon text-[var(--primary-color)] text-2xl transition-transform duration-300 group-hover:rotate-12"
+            class="faq-icon text-[var(--text-0)] text-2xl transition-transform duration-300 group-hover:rotate-12"
           >
             +
           </span>
@@ -632,7 +594,7 @@
         <div
           class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0 pr-8 select-none"
         >
-          <p class="pb-6 text-gray-600 leading-relaxed">
+          <p class="pb-6 text-[var(--text-4)] leading-relaxed">
             We encourage a smart casual or elevated style to match the dining
             experience.
           </p>
@@ -643,64 +605,68 @@
 </section>
 
 <!-- guest experience -->
-<section class="select-none py-28 bg-[var(--bg-2)]">
+<section
+  class="select-none py-28 bg-gradient-to-b from-[var(--cloud-4)] via-[var(--cloud-2)] to-[var(--cloud-0)]"
+>
   <div class="max-w-5xl mx-auto md:px-4 px-8 space-y-20">
     <!-- Header -->
     <div
       class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
-      <p
-        class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
-      >
+      <p class="text-xs tracking-[0.25em] uppercase text-[var(--text-2)]">
         Guest Experience
       </p>
 
-      <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+      <h2 class="text-4xl md:text-5xl font-serif text-[var(--text-important)]">
         Words from Our Guests
       </h2>
 
-      <div
-        class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
-      ></div>
+      <div class="w-12 h-[1px] bg-[var(--bg-light-0)] mx-auto opacity-60"></div>
     </div>
 
     <!-- Testimonials -->
     <div class="space-y-16">
       <!-- Quote -->
       <div class="max-w-3xl mx-auto text-center space-y-6">
-        <p class="text-xl md:text-2xl font-serif text-gray-800 leading-relaxed">
+        <p
+          class="text-xl md:text-2xl font-serif text-[var(--text-1)] leading-relaxed"
+        >
           “The flavors felt authentic yet elevated—truly unforgettable.”
         </p>
 
-        <span class="text-sm text-gray-500 tracking-wide">
+        <span class="text-sm text-[var(--text-2)] tracking-wide">
           — Guest Experience
         </span>
       </div>
 
       <!-- Divider -->
-      <div class="w-16 h-[1px] bg-[var(--card-border-color)] mx-auto"></div>
+      <div class="w-16 h-[1px] bg-[var(--border-card)] mx-auto"></div>
 
       <!-- Quote -->
       <div class="max-w-3xl mx-auto text-center space-y-6">
-        <p class="text-xl md:text-2xl font-serif text-gray-800 leading-relaxed">
+        <p
+          class="text-xl md:text-2xl font-serif text-[var(--text-1)] leading-relaxed"
+        >
           “Every detail, from the food to the atmosphere, was beautifully done.”
         </p>
 
-        <span class="text-sm text-gray-500 tracking-wide">
+        <span class="text-sm text-[var(--text-2)] tracking-wide">
           — Private Dining Guest
         </span>
       </div>
 
       <!-- Divider -->
-      <div class="w-16 h-[1px] bg-[var(--card-border-color)] mx-auto"></div>
+      <div class="w-16 h-[1px] bg-[var(--border-card)] mx-auto"></div>
 
       <!-- Quote -->
       <div class="max-w-3xl mx-auto text-center space-y-6">
-        <p class="text-xl md:text-2xl font-serif text-gray-800 leading-relaxed">
+        <p
+          class="text-xl md:text-2xl font-serif text-[var(--text-1)] leading-relaxed"
+        >
           “Caspar’s brings Persian cuisine to a whole new level.”
         </p>
 
-        <span class="text-sm text-gray-500 tracking-wide">
+        <span class="text-sm text-[var(--text-2)] tracking-wide">
           — Evening Reservation
         </span>
       </div>
@@ -718,70 +684,64 @@
     "
     id="parallaxBg"
   ></div>
-
-  <!-- <div
-    id="parallaxBg"
-    loading="lazy"
-    class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed z-0"
-    style="
-      background-image: url(/public/images/pexels-valeriya-27305315.jpg);
-      background-color: var(--black);
-    "
-  ></div> -->
   <section
-    class="relative md:py-1 py-[2px] bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+    class="relative md:py-1 py-[2px] bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)] text-white"
   ></section>
   <div
-    class="relative z-10 max-w-3xl md:my-20 mt-0 mb-0 mx-auto p-10 bg-white/80 md:backdrop-blur-md backdrop-blur-sm md:rounded-md rounded-none text-center"
+    class="px-10 md:py-10 py-20 relative z-10 max-w-3xl md:my-40 mt-0 mb-0 mx-auto bg-[#333333]/80 md:backdrop-blur-md backdrop-blur-sm md:rounded-md rounded-none text-center"
   >
     <div
       class="fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
-      <h2 class="text-3xl md:text-4xl font-bold text-amber-900 my-4">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-[var(--text-important)] my-4"
+      >
         An Evening Worth Remembering
       </h2>
-      <p class="text-gray-800 mb-6">
+      <p class="text-[var(--text-1)] mb-6">
         Reserve your table and experience Persian dining, refined.
       </p>
       <button
         onclick="loadPage('pages/menu.html')"
-        class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--primary-color)] text-[var(--primary-color)] rounded-sm transition-all duration-300 ease-in-out hover:bg-[var(--primary-color)] hover:text-white shadow-[0_2px_10px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
+        class="uppercase font-medium tracking-[0.12em] text-sm px-8 py-3 border border-[var(--text-0)] text-[var(--text-0)] hover:bg-[var(--text-0)] hover:text-[var(--bg-1)] rounded-sm transition-all duration-300 ease-in-out shadow-[0_2px_10px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
       >
         Plan your Evening
       </button>
     </div>
   </div>
   <section
-    class="relative md:py-1 py-[2px] bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-2)] to-[var(--accent-3)] text-white"
+    class="relative md:py-1 py-[2px] bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)] text-white"
   ></section>
 </section>
 
 <!-- mailing list -->
-<section class="select-none bg-[var(--bg-2)] py-20 px-6">
+<section
+  class="select-none bg-gradient-to-b from-[var(--cloud-0)] via-[var(--cloud-1)] to-[var(--cloud-2)] py-20 px-6"
+>
   <div class="max-w-2xl mx-auto space-y-4">
     <div class="text-center space-y-10">
       <!-- Header -->
       <div
         class="space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
       >
-        <p
-          class="text-xs tracking-[0.25em] uppercase text-[var(--primary-color)]"
-        >
+        <p class="text-xs tracking-[0.25em] uppercase text-[var(--text-2)]">
           Updates
         </p>
 
-        <h2 class="text-4xl md:text-5xl font-serif text-amber-900">
+        <h2
+          class="text-4xl md:text-5xl font-serif text-[var(--text-important)]"
+        >
           Stay Connected
         </h2>
 
         <div
-          class="w-12 h-[1px] bg-[var(--primary-color)] mx-auto opacity-60"
+          class="w-12 h-[1px] bg-[var(--bg-light-0)] mx-auto opacity-60"
         ></div>
       </div>
 
       <!-- Description -->
       <p
-        class="text-gray-600 leading-relaxed max-w-xl mx-auto fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+        class="text-[var(--text-4)] leading-relaxed max-w-xl mx-auto fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
       >
         Receive exclusive updates, seasonal dishes, and private event
         invitations.
@@ -803,14 +763,14 @@
             placeholder=" "
             name="EMAIL"
             id="updatesEmail"
-            class="peer w-full border-b border-gray-300 p-3 focus:outline-none focus:border-[var(--primary-color)]"
+            class="peer w-full border-b border-[var(--input-border)] text-[var(--input-text)] bg-[var(--input-bg)] focus:bg-[var(--input-bg-focus)] p-3 focus:outline-none focus:border-[var(--input-border-focus)]"
             minlength="6"
             maxlength="50"
             required
           />
           <label
             for="updatesEmail"
-            class="cursor-auto absolute left-4 top-5 mt-4 text-sm text-gray-400 transition-all duration-300 peer-placeholder-shown:text-sm peer-focus:left-1 peer-focus:scale-95 peer-[&:not(:placeholder-shown)]:left-1 peer-[&:not(:placeholder-shown)]:scale-95 peer-[&:not(:placeholder-shown)]:top-[-1rem] ease-out duration-200 peer-focus:top-[-1rem] peer-focus:text-xs peer-focus:text-[var(--primary-color)] peer-[&:not(:placeholder-shown)]:top-0 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-[var(--primary-color)]"
+            class="leading-none cursor-auto absolute left-4 top-5 mt-4 text-sm text-gray-400 transition-all duration-300 peer-placeholder-shown:text-sm peer-focus:left-1 peer-focus:scale-95 peer-[&:not(:placeholder-shown)]:left-1 peer-[&:not(:placeholder-shown)]:scale-95 peer-[&:not(:placeholder-shown)]:top-[-1rem] ease-out duration-200 peer-focus:top-[-1rem] peer-focus:text-xs peer-focus:text-[var(--text-0)] peer-[&:not(:placeholder-shown)]:top-0 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-[var(--text-0)]"
           >
             Email
           </label>
@@ -828,7 +788,7 @@
         <div class="text-center pt-5">
           <button
             type="submit"
-            class="md:w-auto w-full submit-btn px-10 py-[13.5px] border border-[var(--primary-color)] text-[var(--primary-color)] uppercase font-medium tracking-[0.12em] text-sm transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-white"
+            class="md:w-auto w-full submit-btn px-10 py-[13.5px] border border-[var(--text-0)] text-[var(--text-0)] hover:bg-[var(--text-0)] hover:text-[var(--bg-1)] uppercase font-medium tracking-[0.12em] text-sm transition-all duration-300"
           >
             <span class="btn-text">Subscribe</span>
             <span
