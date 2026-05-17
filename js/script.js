@@ -461,9 +461,9 @@ function showToast(type = "success", message = "") {
 
   toast.className = `
     flex items-start gap-3 px-4 py-3 rounded-sm shadow-lg
-    text-sm text-white w-[280px]
+    text-sm text-[var(--input-text)] w-[280px]
     transition-all duration-300
-    ${isSuccess ? "bg-[var(--primary-color)]" : "bg-red-600"}
+    ${isSuccess ? "bg-[var(--toast-success)]" : "bg-[var(--toast-error)]"}
   `;
 
   toast.innerHTML = `

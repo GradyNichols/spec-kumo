@@ -1,2 +1,3 @@
-# spec-caspars
-Luxurious persian restaurant located in Austin, TX.
+# spec-kumo
+
+Modern Japanese ramen restaurant located in Los Angeles, CA.

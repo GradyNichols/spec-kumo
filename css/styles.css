@@ -155,10 +155,10 @@
   --scrollbar-thumb: #9ca3af !important;
   --scrollbar-thumb-hover: #6b7280 !important;
 
-  --loader-gradient-0: #f3efe6 !important;
-  --loader-gradient-1: #8b0000 !important;
+  --loader-gradient-0: #2e2b2c !important;
+  --loader-gradient-1: #e3e3e3 !important;
   --loader-gradient-2: #eae3d6 !important;
-  --loader-gradient-3: #c0392b !important;
+  --loader-gradient-3: #22201f !important;
 
   --input-bg: #3f3f3f !important;
   --input-bg-focus: #333333 !important;
@@ -166,31 +166,34 @@
   --input-border: #333333 !important;
   --input-border-focus: #444444 !important;
 
+  --toast-success: #005500;
+  --toast-error: #550000;
+
   /* -------------NOTHING BELOW HERE-------------- */
 
-  --primary-color: #f2f2f2;
-  --dark-bg: #0a0a0a;
-  --light-bg: #f3f4f6;
-  --border-color: #d1d5db;
-  --text-color: #f5f0e8;
-  --gray-100: #f3f4f6;
+  /* --primary-color: #f2f2f2; */
+  /* --dark-bg: #0a0a0a; */
+  /* --light-bg: #f3f4f6; */
+  /* --border-color: #d1d5db; */
+  /* --text-color: #f5f0e8; */
+  /* --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
-  --gray-800: #1f2937;
-  --white: #ffffff;
-  --black: #000000;
-  --animation-color: #0a0a0a;
+  --gray-800: #1f2937; */
+  /* --white: #ffffff; */
+  /* --black: #000000; */
+  /* --animation-color: #0a0a0a;
   --animation-color-2: #f3f4f6;
-  --animation-color-3: #d4a853;
-  --accent-1: #c0392b;
+  --animation-color-3: #d4a853; */
+  /* --accent-1: #c0392b;
   --accent-2: #8b0000;
-  --accent-3: #8b0000;
+  --accent-3: #8b0000; */
   /* --bg-1: #ffffff;
   --bg-2: #faf9f7;
   --bg-3: #f3efe6;*/
-  --bg-4: #eae3d6;
+  /* --bg-4: #eae3d6;
   --bg-5: #f8f4f2;
-  --bg-6: #f9f7f2;
-  --card-border-color: #e5e0d8;
+  --bg-6: #f9f7f2; */
+  /* --card-border-color: #e5e0d8; */
 
   /* --menu-nav: #d1d5db;
   --tiny-nav-border-color: #d6d0c6;
@@ -451,13 +454,13 @@ textarea {
     border 0.3s ease,
     padding-top 0.3s ease,
     margin-top 0.3s ease;
-  border-top: 2px solid var(--primary-color);
+  border-top: 2px solid var(--tiny-nav-border-color);
   padding-top: 0.75rem;
   margin-top: 0.5rem;
 }
 /* transition: 0.7s ease; */
 
-#gradientFlowBackground {
+/* #gradientFlowBackground {
   background: linear-gradient(
     120deg,
     var(--animation-color),
@@ -467,7 +470,7 @@ textarea {
   );
   background-size: 300% 300%;
   animation: gradientFlow 8s ease infinite;
-}
+} */
 
 #loader {
   background: linear-gradient(
