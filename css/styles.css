@@ -334,12 +334,12 @@ input,
 textarea,
 select,
 button {
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color);
   border-radius: 0;
   background-color: var(--white);
   color: var(--text-color);
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.5; */
   transition: all 0.2s ease-in-out;
 }
 
@@ -362,12 +362,12 @@ textarea:focus,
 select:focus,
 button:focus {
   outline: none;
-  border-color: var(--primary-color);
+  /* border-color: var(--primary-color); */
   box-shadow: 0 0 0 3px rgba(115, 82, 0, 0.2);
 }
 
 textarea {
-  resize: vertical;
+  resize: none;
 }
 
 #navbar {
