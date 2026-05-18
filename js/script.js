@@ -11,6 +11,19 @@ window.addEventListener("load", function () {
   }, 5000);
 });
 
+document.querySelectorAll(".view-more-btn").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const extra = this.previousElementSibling.querySelector(".extra-text");
+    const ellipsis = this.previousElementSibling.querySelector(".ellipsis");
+
+    extra.classList.toggle("hidden");
+    ellipsis.classList.toggle("hidden");
+    this.textContent = extra.classList.contains("hidden")
+      ? "View More"
+      : "View Less";
+  });
+});
+
 function scrollToApps() {
   const element = document.getElementById("appetizers");
   element.scrollIntoView({ behavior: "smooth", block: "start" });
