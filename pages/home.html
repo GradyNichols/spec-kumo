@@ -1,8 +1,3 @@
-<!-- bg-[linear-gradient(to_bottom,black,transparent),url('/path-to-your-image.jpg')] -->
-<!-- bg-gradient-to-b from-[rgba(0,0,0,0)] to-[#666666] -->
-
-<!-- Hero Section -->
-
 <section
   class="select-none relative h-screen w-full flex items-center justify-center text-center overflow-hidden bg-white"
 >
@@ -13,18 +8,15 @@
     playsinline
     class="bg-[var(--bg-0)] absolute top-0 left-0 w-full h-full object-cover"
   >
-    <!-- poster="/public/images/pexels-valeriya-18330996.jpg" -->
     <source src="/public/media/13393550_1080_1920_30fps.mp4" type="video/mp4" />
   </video>
 
-  <!-- Dark Overlay -->
   <div
     class="absolute inset-0 bg-[var(--bg-light-0)]/25 mix-blend-multiply"
   ></div>
 
   <div class="absolute inset-0 bg-black/50"></div>
 
-  <!-- Content -->
   <div class="relative z-10 max-w-3xl px-6 space-y-6">
     <p class="text-xs tracking-[0.3em] uppercase text-[var(--text-2)]">
       Kumo 雲
@@ -69,14 +61,12 @@
   ></section>
 </div>
 
-<!-- img / text section -->
 <section
   class="select-none md:py-16 py-0 bg-gradient-to-b from-[var(--cloud-0)] via-[var(--cloud-2)] to-[var(--cloud-4)]"
 >
   <div
     class="max-w-6xl mx-auto p-0 md:px-6 grid md:grid-cols-2 lg:gap-16 gap-8 items-center"
   >
-    <!-- IMAGE (enhanced) -->
     <div class="relative group">
       <div class="overflow-hidden md:rounded-md rounded-none">
         <img
@@ -86,11 +76,9 @@
         />
       </div>
 
-      <!-- subtle overlay -->
       <div class="absolute inset-0 bg-black/10 rounded-xl"></div>
     </div>
 
-    <!-- TEXT -->
     <div
       class="space-y-6 text-left md:text-left md:pt-0 pt-3 md:px-0 px-[9%] md:pb-0 pb-20 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
@@ -120,13 +108,11 @@
     </div>
   </div>
 </section>
-<!-- from-[var(--cloud-4)] via-[var(--cloud-6)] to-[var(--cloud-8)] -->
-<!-- MENU PREVIEW HERE (SLIDER) -->
+
 <section
   class="select-none py-28 bg-gradient-to-b from-[var(--bg-2)] via-[var(--bg-1)] to-[var(--bg-3)]"
 >
   <div class="max-w-6xl mx-auto px-0 space-y-16">
-    <!-- Header -->
     <div
       class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out px-5"
     >
@@ -143,10 +129,8 @@
       ></div>
     </div>
 
-    <!-- Swiper -->
     <div class="swiper menuSwiper">
       <div class="swiper-wrapper">
-        <!-- ITEM -->
         <div class="swiper-slide group">
           <div class="overflow-hidden rounded-lg">
             <img
@@ -164,8 +148,6 @@
             </p>
           </div>
         </div>
-
-        <!-- ITEM -->
         <div class="swiper-slide group">
           <div class="overflow-hidden rounded-lg">
             <img
@@ -185,7 +167,6 @@
           </div>
         </div>
 
-        <!-- ITEM -->
         <div class="swiper-slide group">
           <div class="overflow-hidden rounded-lg">
             <img
@@ -204,7 +185,6 @@
           </div>
         </div>
 
-        <!-- ITEM -->
         <div class="swiper-slide group">
           <div class="overflow-hidden rounded-lg">
             <img
@@ -246,7 +226,6 @@
       <div class="relative top-20 swiper-pagination mt-4"></div>
     </div>
 
-    <!-- CTA -->
     <div class="text-center pt-0">
       <button
         onclick="loadPage('pages/menu.html')"
@@ -258,16 +237,10 @@
   </div>
 </section>
 
-<!-- <section
-  class="pt-0.5 bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)] text-white"
-></section> -->
-
-<!-- Crafted with intention -->
 <section
   class="select-none py-24 px-12 bg-gradient-to-b from-[var(--cloud-8)] via-[var(--cloud-10)] to-[var(--cloud-12)]"
 >
   <div class="max-w-5xl mx-auto px-4 space-y-16">
-    <!-- Header -->
     <div
       class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
@@ -287,10 +260,7 @@
         Every detail exists to elevate the experience without distraction.
       </p>
     </div>
-
-    <!-- Content -->
     <div class="space-y-12">
-      <!-- Item -->
       <div
         class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-[var(--tiny-nav-border-color)] pb-8"
       >
@@ -300,8 +270,6 @@
           Ingredients chosen for clarity and balance.
         </p>
       </div>
-
-      <!-- Item -->
       <div
         class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-b border-[var(--tiny-nav-border-color)] pb-8"
       >
@@ -311,8 +279,6 @@
           Technique refined through patience.
         </p>
       </div>
-
-      <!-- Item -->
       <div
         class="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
       >
@@ -326,7 +292,6 @@
   </div>
 </section>
 
-<!-- parallax -->
 <section class="select-none relative overflow-hidden">
   <div
     class="parallax-section absolute inset-0 z-0"
@@ -370,12 +335,10 @@
   ></section>
 </section>
 
-<!-- EVENTS / PRIVATE DINING PREVIEW HERE -->
 <section
   class="select-none py-28 bg-gradient-to-b from-[var(--cloud-12)] via-[var(--cloud-10)] to-[var(--cloud-8)]"
 >
   <div class="max-w-6xl mx-auto px-6 space-y-20">
-    <!-- Header -->
     <div
       class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
@@ -391,10 +354,7 @@
         class="w-12 h-[1px] bg-[var(--tiny-nav-border-color)] mx-auto opacity-60"
       ></div>
     </div>
-
-    <!-- Main Feature -->
     <div class="grid md:grid-cols-2 gap-12 items-center">
-      <!-- TEXT (LEFT) -->
       <div
         class="space-y-6 md:text-left order-2 md:order-1 md:pt-0 pt-3 md:px-4 px-[7%] fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
       >
@@ -426,8 +386,6 @@
           Explore Events
         </button>
       </div>
-
-      <!-- IMAGE (RIGHT) -->
       <div class="overflow-hidden rounded-lg group order-1 md:order-2">
         <img
           src="/public/images/pexels-cottonbro-7594052.jpg"
@@ -435,8 +393,6 @@
         />
       </div>
     </div>
-
-    <!-- Secondary Row -->
     <div
       class="grid md:grid-cols-3 gap-8 md:pt-10 pt-16 px-5 border-t border-[var(--tiny-nav-border-color)] md:space-y-0 space-y-6"
     >
@@ -476,18 +432,10 @@
   </div>
 </section>
 
-<!-- <section
-  class="pt-0.5 bg-gradient-to-r from-[var(--red-0)] via-[var(--red-2)] to-[var(--red-1)] text-white"
-></section> -->
-
-<!-- md:border-t-0 md:border-b-0 border-[var(--red-0)] -->
-
-<!-- FAQ -->
 <section
   class="select-none bg-gradient-to-b from-[var(--bg-2)] via-[var(--bg-1)] to-[var(--bg-2)] py-20 px-6"
 >
   <div class="max-w-3xl mx-auto space-y-16">
-    <!-- Header -->
     <div
       class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
@@ -505,10 +453,7 @@
         class="w-12 h-[1px] bg-[var(--tiny-nav-border-color)] mx-auto opacity-60"
       ></div>
     </div>
-
-    <!-- FAQ -->
     <div class="space-y-0 px-6" id="faqContainer">
-      <!-- ITEM -->
       <div class="border-b border-[var(--tiny-nav-border-color)]">
         <button
           onclick="toggleFAQ(this)"
@@ -533,8 +478,6 @@
           </p>
         </div>
       </div>
-
-      <!-- ITEM -->
       <div class="border-b border-[var(--tiny-nav-border-color)]">
         <button
           onclick="toggleFAQ(this)"
@@ -559,8 +502,6 @@
           </p>
         </div>
       </div>
-
-      <!-- ITEM -->
       <div class="border-b border-[var(--tiny-nav-border-color)]">
         <button
           onclick="toggleFAQ(this)"
@@ -614,12 +555,10 @@
   </div>
 </section>
 
-<!-- guest experience -->
 <section
   class="select-none py-28 bg-gradient-to-b from-[var(--cloud-4)] via-[var(--cloud-2)] to-[var(--cloud-0)]"
 >
   <div class="max-w-5xl mx-auto md:px-4 px-8 space-y-20">
-    <!-- Header -->
     <div
       class="text-center space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
     >
@@ -635,10 +574,7 @@
         class="w-12 h-[1px] bg-[var(--tiny-nav-border-color)] mx-auto opacity-60"
       ></div>
     </div>
-
-    <!-- Testimonials -->
     <div class="space-y-16">
-      <!-- Quote -->
       <div class="max-w-3xl mx-auto text-center space-y-6">
         <p
           class="text-xl md:text-2xl font-serif text-[var(--text-1)] leading-relaxed"
@@ -651,10 +587,8 @@
         </span>
       </div>
 
-      <!-- Divider -->
       <div class="w-16 h-[1px] bg-[var(--border-card)] mx-auto"></div>
 
-      <!-- Quote -->
       <div class="max-w-3xl mx-auto text-center space-y-6">
         <p
           class="text-xl md:text-2xl font-serif text-[var(--text-1)] leading-relaxed"
@@ -667,10 +601,8 @@
         </span>
       </div>
 
-      <!-- Divider -->
       <div class="w-16 h-[1px] bg-[var(--border-card)] mx-auto"></div>
 
-      <!-- Quote -->
       <div class="max-w-3xl mx-auto text-center space-y-6">
         <p
           class="text-xl md:text-2xl font-serif text-[var(--text-1)] leading-relaxed"
@@ -686,7 +618,6 @@
   </div>
 </section>
 
-<!-- parallax -->
 <section class="select-none relative overflow-hidden">
   <div
     class="parallax-section absolute inset-0 z-0"
@@ -726,13 +657,11 @@
   ></section>
 </section>
 
-<!-- mailing list -->
 <section
   class="select-none bg-gradient-to-b from-[var(--cloud-0)] via-[var(--cloud-1)] to-[var(--cloud-2)] py-20 px-6"
 >
   <div class="max-w-2xl mx-auto space-y-4">
     <div class="text-center space-y-10">
-      <!-- Header -->
       <div
         class="space-y-4 fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
       >
@@ -750,8 +679,6 @@
           class="w-12 h-[1px] bg-[var(--tiny-nav-border-color)] mx-auto opacity-60"
         ></div>
       </div>
-
-      <!-- Description -->
       <p
         class="text-[var(--text-4)] leading-relaxed max-w-xl mx-auto fade-up opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
       >
@@ -760,7 +687,6 @@
       </p>
     </div>
     <div class="space-y-10">
-      <!-- Form -->
       <form
         action="https://app.us9.list-manage.com/subscribe/post?u=93af7b5fdd2b6a1e99ccde5ff&amp;id=6045773678&amp;f_id=006242e1f0"
         data-test="true"
